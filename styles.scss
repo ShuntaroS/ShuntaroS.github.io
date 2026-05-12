@@ -177,6 +177,29 @@ body {
   background: #fff;
 }
 
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.project-fact {
+  border-top: 1px solid var(--site-line);
+  padding-top: 0.65rem;
+}
+
+.project-fact span {
+  display: block;
+  color: var(--site-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+}
+
+.project-fact strong {
+  font-weight: 600;
+}
+
 .pub-actions {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +218,8 @@ body {
 @media (max-width: 760px) {
   .profile-hero,
   .summary-grid,
-  .field-grid {
+  .field-grid,
+  .project-facts {
     grid-template-columns: 1fr;
   }
 

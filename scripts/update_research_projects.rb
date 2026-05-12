@@ -92,11 +92,11 @@ def project_items(html)
   end.compact
 end
 
-def existing_manual_items
+def existing_display_items
   return [] unless File.exist?(OUTPUT)
 
   data = YAML.load_file(OUTPUT)
-  data.fetch("manual_items", [])
+  data.fetch("items", data.fetch("manual_items", []))
 rescue Psych::SyntaxError
   []
 end
@@ -112,7 +112,7 @@ data = {
     "fetched_at" => Date.today.to_s,
     "query" => "佐藤俊太朗"
   },
-  "manual_items" => existing_manual_items,
+  "items" => existing_display_items,
   "jst_items" => items
 }
 

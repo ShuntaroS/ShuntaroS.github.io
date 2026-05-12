@@ -31,6 +31,13 @@ def html_escape(value)
        .gsub('"', "&quot;")
 end
 
+def localized_value(value, lang)
+  return nil if blank?(value)
+  return value unless value.is_a?(Hash)
+
+  value[lang] || value["ja"] || value["en"] || value.values.find { |candidate| !blank?(candidate) }
+end
+
 def button(label, url, style = "outline-primary")
   return "" if blank?(url)
 
@@ -224,37 +231,34 @@ end
 
 def project_card(item, lang)
   lines = []
-  title = item["title"].is_a?(Hash) ? (item["title"][lang] || item["title"]["ja"] || item["title"]["en"]) : item["title"]
-  meta = [
-    item["project_number"],
-    item["research_category"],
-    item["period"],
-    item["status"]
-  ].reject { |value| blank?(value) }.join(" / ")
+  title = localized_value(item["title"], lang)
+  labels = {
+    "ja" => {
+      funding_agency: "配分機関",
+      period: "研究期間",
+      role: "役割"
+    },
+    "en" => {
+      funding_agency: "Funding agency",
+      period: "Period",
+      role: "Role"
+    }
+  }[lang]
+
+  facts = [
+    [labels[:funding_agency], localized_value(item["funding_agency"], lang)],
+    [labels[:period], item["period"]],
+    [labels[:role], localized_value(item["role"], lang)]
+  ].reject { |_label, value| blank?(value) }
 
   lines << "::: {.project-item}"
   lines << "<div class=\"item-title\">#{html_escape(title)}</div>"
-  lines << ""
-  lines << "<div class=\"pub-meta\">#{meta}</div>" unless blank?(meta)
-  unless blank?(item["principal_investigator"])
-    label = lang == "ja" ? "研究代表者" : "Principal investigator"
+  if facts.any?
     lines << ""
-    lines << "**#{label}:** #{item["principal_investigator"].to_s.gsub(/\s+/, " ")}"
-  end
-  unless blank?(item["institution"])
-    label = lang == "ja" ? "研究機関" : "Institution"
-    lines << ""
-    lines << "**#{label}:** #{item["institution"].to_s.gsub(/\s+/, " ")}"
-  end
-  unless blank?(item["review_section"])
-    label = lang == "ja" ? "審査区分・研究分野" : "Review section / field"
-    lines << ""
-    lines << "**#{label}:** #{item["review_section"]}"
-  end
-  unless blank?(item["url"])
-    lines << ""
-    lines << "::: {.pub-actions}"
-    lines << button(lang == "ja" ? "詳細" : "Details", item["url"])
+    lines << "::: {.project-facts}"
+    facts.each do |label, value|
+      lines << "<div class=\"project-fact\"><span>#{html_escape(label)}</span><strong>#{html_escape(value)}</strong></div>"
+    end
     lines << ":::"
   end
   lines << ":::"
@@ -275,14 +279,22 @@ def research_projects(lang, projects)
     }
   }[lang]
 
-  items = projects.fetch("manual_items", []) + projects.fetch("jst_items", [])
+  curated_items = projects.fetch("items", [])
+  items = curated_items.empty? ? projects.fetch("manual_items", []) + projects.fetch("jst_items", []) : curated_items
   lines = []
   lines << "## #{labels[:heading]}"
   lines << ""
-  if projects["source"] && projects["source"]["url"]
-    fetched_at = projects["source"]["fetched_at"]
-    source_text = "#{labels[:source]}: <a href=\"#{projects["source"]["url"]}\" target=\"_blank\" rel=\"noopener\">#{labels[:source_label]}</a>"
-    source_text += " / #{fetched_at}" unless blank?(fetched_at)
+  if projects["source"]
+    source = projects["source"]
+    source_name = localized_value(source["name"], lang) || labels[:source_label]
+    source_text = "#{labels[:source]}: "
+    source_text += if source["url"]
+                     "<a href=\"#{source["url"]}\" target=\"_blank\" rel=\"noopener\">#{html_escape(source_name)}</a>"
+                   else
+                     html_escape(source_name)
+                   end
+    source_date = source["fetched_at"] || source["captured_at"]
+    source_text += " / #{source_date}" unless blank?(source_date)
     lines << "<div class=\"data-note\">#{source_text}</div>"
     lines << ""
   end
