@@ -1,0 +1,72 @@
+schema: hugoblox/author/v1
+slug: me
+name:
+  display: Shuntaro Sato
+  given: Shuntaro
+  family: Sato
+  pronunciation: ""
+role: Lecturer
+bio: |
+  My research and practice focus on biostatistics, epidemiologic methods, clinical epidemiology, study design, statistical analysis, research consultation, and clinical research education.
+affiliations:
+  - name: Clinical Research Center, Nagasaki University Hospital
+    url: https://www.mh.nagasaki-u.ac.jp/research/crc/
+interests:
+  - Biostatistics
+  - Epidemiologic Methods
+  - Clinical Epidemiology
+  - Clinical Research Design
+education:
+  - degree: PhD in Medical Biostatistics
+    institution: Kurume University Graduate School of Medicine
+    year: Apr 2015 - Oct 2018
+    start: 2015-04-01
+    end: 2018-10-01
+  - degree: MSc in Environmental Science
+    institution: Nagasaki University Graduate School of Science and Technology
+    year: Apr 2008 - Mar 2010
+    start: 2008-04-01
+    end: 2010-03-31
+  - degree: BSc in Environmental Science
+    institution: Nagasaki University
+    year: Apr 2006 - Mar 2008
+    start: 2006-04-01
+    end: 2008-03-31
+experience:
+  - role: Lecturer
+    org: Clinical Research Center, Nagasaki University Hospital
+    start: 2023-11-01
+    summary: |
+      Clinical research support, study design, statistical analysis, and research education.
+  - role: Assistant Professor
+    org: Clinical Research Center, Nagasaki University Hospital
+    start: 2014-03-01
+    end: 2023-10-31
+  - role: Data Management and Statistical Analysis
+    org: Private company
+    start: 2010-04-01
+    end: 2014-03-31
+skills:
+  - name: Research
+    items:
+      - label: Study Design
+        level: 5
+      - label: Statistical Analysis
+        level: 5
+      - label: Clinical Epidemiology
+        level: 5
+  - name: Education
+    items:
+      - label: Medical Statistics
+        level: 5
+      - label: Research Consultation
+        level: 5
+awards:
+  - title: Excellent Presentation Award
+    awarder: Japanese Society of Clinical Trials and Research
+    date: "2022-02-01"
+    summary: "Association between enforcement of the Clinical Trials Act and the number of clinical studies: an interrupted time-series design"
+  - title: Excellent Presentation Award
+    awarder: Japanese Society of Clinical Trials and Research
+    date: "2019-02-01"
+    summary: "Risk factors for research misconduct in medical research"

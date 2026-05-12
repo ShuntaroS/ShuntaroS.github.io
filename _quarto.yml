@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+  post-render:
+    - scripts/post_render.sh
+  render:
+    - "*.qmd"
+    - "en/*.qmd"
+
+website:
+  title: "佐藤 俊太朗 / Shuntaro Sato"
+  site-url: "https://shuntaros.github.io/"
+  description: "佐藤俊太朗の研究者ポートフォリオ。生物統計学、臨床疫学、研究デザイン、統計解析、臨床研究支援に関する活動を掲載しています。"
+  navbar:
+    pinned: true
+    search: false
+    left:
+      - text: "Profile"
+        href: index.qmd
+      - text: "CV"
+        href: cv.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Contact"
+        href: contact.qmd
+    right:
+      - text: "日本語"
+        href: index.qmd
+      - text: "English"
+        href: en/index.qmd
+  page-footer:
+    left: "© 2026 佐藤 俊太朗 / Shuntaro Sato"
+    right:
+      - text: "PubMed"
+        href: "https://pubmed.ncbi.nlm.nih.gov/?term=%22Sato%2C%20Shuntaro%22%5BFull%20Author%20Name%5D"
+      - text: "researchmap"
+        href: "https://researchmap.jp/shuntarosato"
+      - text: "ORCID"
+        href: "https://orcid.org/0000-0002-6055-3649"
+
+format:
+  html:
+    theme:
+      - zephyr
+      - styles.scss
+    toc: true
+    toc-location: right
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    html-math-method: plain
+
+execute:
+  freeze: auto

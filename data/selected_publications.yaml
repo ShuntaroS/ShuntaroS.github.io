@@ -1,0 +1,80 @@
+sections:
+  - key: first_author
+    title:
+      ja: "原著論文（第一著者）"
+      en: "Original Articles, First Author"
+    items:
+      - year: 2025
+        title: "Estimation of the adjusted risk difference for very rare events, large samples, and extreme exposure frequency: Application of Vaccine Effectiveness, Networking, and Universal Safety study data"
+        authors: "Sato S, Kawazoe Y, Murata F, Maeda M, Fukuda H"
+        citation: "Ann Clin Epidemiol. 2025;7(2):50-60."
+        doi: "10.37737/ace.25007"
+        pmid: "40226163"
+        url: "https://pubmed.ncbi.nlm.nih.gov/40226163/"
+      - year: 2024
+        title: "Comparison design and evaluation power in cohort and self-controlled case series designs for post-authorization vaccine safety studies"
+        authors: "Sato S, Kawazoe Y, Katsuta T, Fukuda H"
+        citation: "PeerJ. 2024;12:e16780."
+        doi: "10.7717/peerj.16780"
+        pmid: "38282861"
+        pmcid: "PMC10812582"
+        url: "https://pubmed.ncbi.nlm.nih.gov/38282861/"
+      - year: 2024
+        title: "Immune thrombocytopenic purpura and Guillain-Barré syndrome after 23-valent pneumococcal polysaccharide vaccination in Japan: The vaccine effectiveness, networking, and universal safety (VENUS) study"
+        authors: "Sato S, Katsuta T, Kawazoe Y, Takahashi M, Murata F, Maeda M, Fukuda H, Kamidani S"
+        citation: "Vaccine. 2024;42(1):4-7."
+        doi: "10.1016/j.vaccine.2023.11.053"
+        pmid: "38044244"
+        url: "https://pubmed.ncbi.nlm.nih.gov/38044244/"
+      - year: 2018
+        title: "Fast score test with global null estimation regardless of missing genotypes"
+        authors: "Sato S, Ueki M; Alzheimer's Disease Neuroimaging Initiative"
+        citation: "PLOS ONE. 2018;13(7):e0199692."
+        doi: "10.1371/journal.pone.0199692"
+        pmid: "29975732"
+        pmcid: "PMC6033421"
+        url: "https://pubmed.ncbi.nlm.nih.gov/29975732/"
+  - key: co_first_author
+    title:
+      ja: "原著論文（共同第一著者）"
+      en: "Original Articles, Co-first Author"
+    items:
+      - year: 2025
+        title: "A novel scoring algorithm for chest pain can effectively support the diagnosis of acute coronary syndrome in prehospital settings: a cross-sectional study"
+        authors: "Iyama K, Sato S, Akashi R, Baba K, Hayakawa K, Ikeda S, Maemura K, Tasaki O"
+        citation: "Int J Emerg Med. 2025 Oct 31;18(1):224."
+        doi: "10.1186/s12245-025-01019-7."
+        pmid: "41174486"
+        pmcid: "PMC12577411"
+        url: "https://pubmed.ncbi.nlm.nih.gov/41174486/"
+      - year: 2023
+        title: "Decreased community-acquired pneumonia coincided with rising awareness of precautions before governmental containment policy in Japan"
+        authors: "Tashiro M, Sato S, Endo A, Hamashima R, Ito Y, Ashizawa N, Takeda K, Iwanaga N, Ide S, Fujita A, Takazono T, Yamamoto K, Tanaka T, Furumoto A, Yanagihara K, Mukae H, Fushimi K, Izumikawa K"
+        citation: "PNAS Nexus. 2023;2(5):pgad153."
+        doi: "10.1093/pnasnexus/pgad153"
+        pmid: "37234205"
+        pmcid: "PMC10208112"
+        url: "https://pubmed.ncbi.nlm.nih.gov/37234205/"
+      - year: 2020
+        title: "Next-generation sequencing of the whole MEFV gene in Japanese patients with familial Mediterranean fever: a case-control association study"
+        authors: "Koga T, Sato S, Mishima H, Migita K, Endo Y, Umeda M, Sumiyoshi R, Nonaka F, Fukui S, Kawashiri SY, Iwamoto N, Ichinose K, Tamai M, Nakamura H, Origuchi T, Ueki Y, Masumoto J, Agematsu K, Yachie A, Yoshiura KI, Eguchi K, Kawakami A"
+        citation: "Clin Exp Rheumatol. 2020;38 Suppl 127(5):35-41."
+        pmid: "33025889"
+        url: "https://pubmed.ncbi.nlm.nih.gov/33025889/"
+      - year: 2019
+        title: "Impact of perioperative aneurysm rebleeding after subarachnoid hemorrhage"
+        authors: "Horie N, Sato S, Kaminogo M, Morofuji Y, Izumo T, Anda T, Matsuo T"
+        citation: "J Neurosurg. 2019 Sep 13:1-10."
+        doi: "10.3171/2019.6.JNS19704"
+        pmid: "31518984"
+        url: "https://pubmed.ncbi.nlm.nih.gov/31518984/"
+  - key: books
+    title:
+      ja: "書籍"
+      en: "Books"
+    items:
+      - year: 2024
+        title: "現代疫学 原著第4版"
+        authors: "Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編; Sato S, 藤井亮輔, 芝孝一郎, 後藤匡啓, 今村文昭 監訳"
+        citation: "原著: Modern Epidemiology, 4th edition. Wolters Kluwer, 2020."
+        url: "https://amzn.asia/d/2nWmtYv"

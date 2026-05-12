@@ -1,0 +1,8 @@
+---
+title: "Publications"
+page-layout: full
+toc: true
+---
+
+{{< include ../_includes/publications-en.md >}}
+

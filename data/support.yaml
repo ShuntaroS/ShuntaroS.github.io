@@ -1,0 +1,26 @@
+ja:
+  summary:
+    - title: "統計相談"
+      body: "年間100件以上の統計相談を約10年間継続。研究計画、解析方針、結果解釈を支援しています。"
+    - title: "実務をともなう解析支援"
+      body: "臨床試験、観察研究、特定臨床研究などで、研究デザインから解析まで関与します。"
+    - title: "教育・セミナー"
+      body: "医学統計学、臨床研究デザイン、予測モデル、報告ガイドラインなどに関する講義・研修を行っています。"
+  current:
+    - "統計コンサル（個人・学外含む）"
+    - "統計コンサル（企業）"
+    - "臨床試験"
+    - "観察研究"
+en:
+  summary:
+    - title: "Statistical Consultation"
+      body: "More than 100 statistical consultations per year for approximately 10 years, covering study planning, analysis strategy, and interpretation."
+    - title: "Hands-on Analysis Support"
+      body: "Support for clinical trials, observational studies, and specified clinical trials from design to analysis."
+    - title: "Education and Seminars"
+      body: "Lectures and training on medical statistics, clinical research design, prediction models, and reporting guidelines."
+  current:
+    - "Statistical consultation for individual researchers, including outside institutions"
+    - "Statistical consultation for companies"
+    - "Clinical trials"
+    - "Observational studies"

@@ -1,0 +1,7 @@
+---
+title: "業績"
+page-layout: full
+toc: true
+---
+
+{{< include _includes/publications-ja.md >}}

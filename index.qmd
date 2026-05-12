@@ -1,0 +1,8 @@
+---
+title: "プロフィール"
+page-layout: full
+toc: false
+body-class: home
+---
+
+{{< include _includes/home-ja.md >}}

@@ -1,0 +1,18 @@
+---
+title: "問い合わせ"
+page-layout: full
+toc: false
+---
+
+共同研究、臨床研究支援、統計相談、講演・セミナー等に関するご連絡は、以下のフォームまたはメールをご利用ください。
+
+[Google Formを開く](https://docs.google.com/forms/d/e/1FAIpQLSeUGg4F2KCoSaJyOb140Ndtg57VUDpPDoVsLVMbki1ikF6lBg/viewform){.btn .btn-primary target="_blank"}
+
+<div class="form-frame">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUGg4F2KCoSaJyOb140Ndtg57VUDpPDoVsLVMbki1ikF6lBg/viewform?embedded=true" title="問い合わせフォーム" width="100%" height="1180" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
+</div>
+
+## メール
+
+- Gmail: ご存じのGmailアドレス宛にお願いします。
+- 所属アドレス: [shuntarosato@nagasaki-u.ac.jp](mailto:shuntarosato@nagasaki-u.ac.jp)

@@ -1,0 +1,8 @@
+---
+title: "CV"
+page-layout: full
+toc: true
+---
+
+{{< include ../_includes/cv-en.md >}}
+

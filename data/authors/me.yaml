@@ -1,0 +1,93 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: 佐藤 俊太朗
+  given: 俊太朗
+  family: 佐藤
+  alternate: Shuntaro Sato
+  pronunciation: さとう しゅんたろう
+postnominals:
+  - PhD
+role: 講師
+bio: |
+  専門は生物統計学、疫学方法論、臨床疫学です。臨床試験・観察研究の研究デザイン、統計解析、研究相談、臨床研究教育に取り組んでいます。
+affiliations:
+  - name: 長崎大学病院 臨床研究センター
+    url: https://www.mh.nagasaki-u.ac.jp/research/crc/
+links:
+  - icon: academicons/google-scholar
+    url: https://scholar.google.co.jp/citations?user=uZtTkBAAAAAJ&hl=ja
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-6055-3649
+  - icon: hero/book-open
+    url: https://researchmap.jp/shuntarosato
+    label: researchmap
+  - icon: brands/x
+    url: https://twitter.com/Shuntarooo3
+interests:
+  - 生物統計学
+  - 疫学方法論
+  - 臨床疫学
+  - 臨床研究デザイン
+education:
+  - degree: 博士（医学バイオ統計学）
+    institution: 久留米大学大学院 医学研究科 社会医学系専攻 バイオ統計学
+    year: 2015年4月 - 2018年10月
+    start: 2015-04-01
+    end: 2018-10-01
+  - degree: 修士（環境科学）
+    institution: 長崎大学大学院 生産科学研究科 環境保全設計学専攻
+    year: 2008年4月 - 2010年3月
+    start: 2008-04-01
+    end: 2010-03-31
+  - degree: 学士（環境科学）
+    institution: 長崎大学 環境科学部
+    year: 2006年4月 - 2008年3月
+    start: 2006-04-01
+    end: 2008-03-31
+experience:
+  - role: 講師
+    org: 長崎大学病院 臨床研究センター
+    start: 2023-11-01
+    summary: |
+      臨床研究支援、研究デザイン、統計解析、研究教育に従事。
+  - role: 助教
+    org: 長崎大学病院 臨床研究センター
+    start: 2014-03-01
+    end: 2023-10-31
+  - role: DM統計解析部
+    org: 民間企業
+    start: 2010-04-01
+    end: 2014-03-31
+skills:
+  - name: Research
+    items:
+      - label: Study Design
+        level: 5
+      - label: Statistical Analysis
+        level: 5
+      - label: Clinical Epidemiology
+        level: 5
+  - name: Education
+    items:
+      - label: Medical Statistics
+        level: 5
+      - label: Research Consultation
+        level: 5
+languages:
+  - name: Japanese
+    level: 5
+    label: Native
+  - name: English
+    level: 3
+    label: Professional
+awards:
+  - title: 優秀演題
+    awarder: 日本臨床試験学会
+    date: "2022-02-01"
+    summary: "臨床研究法施行と臨床研究実施数との関連: 分割時系列デザイン"
+  - title: 優秀演題
+    awarder: 日本臨床試験学会
+    date: "2019-02-01"
+    summary: "医療分野における研究不正行為に関するリスク要因分析"

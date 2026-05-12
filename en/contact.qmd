@@ -1,0 +1,15 @@
+---
+title: "Contact"
+page-layout: full
+toc: false
+---
+
+For collaboration, clinical research support, statistical consultation, lectures, and seminars, please use the form or email links below.
+
+[Open Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeUGg4F2KCoSaJyOb140Ndtg57VUDpPDoVsLVMbki1ikF6lBg/viewform){.btn .btn-primary target="_blank"}
+
+## Email
+
+- Gmail: Please use my Gmail address if you know it.
+- Institutional email: [shuntarosato@nagasaki-u.ac.jp](mailto:shuntarosato@nagasaki-u.ac.jp)
+
