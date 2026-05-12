@@ -1,6 +1,6 @@
 # 佐藤俊太朗 研究者ポートフォリオ Quarto版
 
-Hugo Bloxで作成した素材をもとにした、Quarto website形式の研究者ホームページです。
+Quarto website形式の研究者ホームページです。
 
 ## ローカル確認
 
@@ -39,3 +39,62 @@ PubMed更新にはインターネット接続が必要です。代表業績は�
 `main` ブランチへpushすると、`.github/workflows/publish.yml` がQuartoサイトをrenderし、GitHub Pagesへ公開します。
 
 GitHub側では、リポジトリの `Settings > Pages` で Source を `GitHub Actions` にしてください。
+
+公開先:
+
+```text
+https://shuntaros.github.io/
+```
+
+## 通常の更新・公開手順
+
+ページを編集したら、ローカルで確認してからcommit/pushします。
+
+```bash
+quarto render
+git status
+git add .
+git commit -m "Update website"
+git push
+```
+
+`git push` 後、GitHub Actionsが自動でQuartoサイトをrenderし、GitHub Pagesへ公開します。通常は1-2分ほどで反映されます。
+
+## データファイルを編集した場合
+
+以下のデータファイルを編集した場合は、`quarto render` の前に表示用Markdownを再生成します。
+
+- `data/profile.yaml`
+- `data/support.yaml`
+- `data/selected_publications.yaml`
+- `data/pubmed.json`
+
+```bash
+ruby scripts/render_site_data.rb
+quarto render
+git status
+git add .
+git commit -m "Update website data"
+git push
+```
+
+## PubMedを更新して公開する場合
+
+PubMedから最新論文を取得して公開する場合は、次の流れです。
+
+```bash
+scripts/update_pubmed.py --retmax 12
+quarto render
+git status
+git add .
+git commit -m "Update PubMed publications"
+git push
+```
+
+PubMed更新にはインターネット接続が必要です。代表業績は自動更新されないため、必要に応じて `data/selected_publications.yaml` を手で編集してください。
+
+## 反映確認
+
+GitHub Actionsの結果はGitHubの `Actions` タブで確認できます。
+
+公開直後に古い表示が残る場合は、数分待ってから再読み込みしてください。
