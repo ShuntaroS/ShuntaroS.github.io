@@ -183,7 +183,7 @@ Toyama S, Morishita T, Hanada M, Nagura H, Suyama K, Yoshinaga R, Makimoto N, Ko
 ::: {.pub-item}
 <div class="item-title">現代疫学 原著第4版</div>
 
-Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編; Sato S, 藤井亮輔, 芝孝一郎, 後藤匡啓, 今村文昭 監訳
+Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編; 佐藤俊太朗, 藤井亮輔, 芝孝一郎, 後藤匡啓, 今村文昭 監訳
 
 <div class="pub-meta">原著: Modern Epidemiology, 4th edition. Wolters Kluwer, 2020.</div>
 
@@ -195,7 +195,7 @@ Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編
 
 ## 共同研究・競争的資金等の研究課題
 
-<div class="data-note">出典: 研究計画書スクリーンショット / 2026-05-12</div>
+<div class="data-note">2026-5-12に更新</div>
 
 ::: {.project-list}
 ::: {.project-item}
@@ -276,6 +276,24 @@ Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編
 ::: {.project-facts}
 <div class="project-fact"><span>配分機関</span><strong>文部科学省</strong></div>
 <div class="project-fact"><span>研究期間</span><strong>2021-2026</strong></div>
+<div class="project-fact"><span>役割</span><strong>分担</strong></div>
+:::
+:::
+::: {.project-item}
+<div class="item-title">臨床研究の質と研究者を取り巻く環境要因および心理的要因との関連</div>
+
+::: {.project-facts}
+<div class="project-fact"><span>配分機関</span><strong>文部科学省</strong></div>
+<div class="project-fact"><span>研究期間</span><strong>2019-2024</strong></div>
+<div class="project-fact"><span>役割</span><strong>代表</strong></div>
+:::
+:::
+::: {.project-item}
+<div class="item-title">シーズ探索研究から発展する家族性地中海熱（FMF）に対するトシリズマブの医師主導治験</div>
+
+::: {.project-facts}
+<div class="project-fact"><span>配分機関</span><strong>国立研究開発法人日本医療研究開発機構</strong></div>
+<div class="project-fact"><span>研究期間</span><strong>2017-2020</strong></div>
 <div class="project-fact"><span>役割</span><strong>分担</strong></div>
 :::
 :::

@@ -1,9 +1,6 @@
 ---
 source:
-  name:
-    ja: 研究計画書スクリーンショット
-    en: Application screenshots
-  captured_at: '2026-05-12'
+  updated_at: '2026-5-12'
 items:
 - title:
     ja: キャッスルマン病・TAFRO症候群診療ガイドライン策定に向けた研究
@@ -83,6 +80,24 @@ items:
     ja: 文部科学省
     en: Ministry of Education, Culture, Sports, Science and Technology
   period: 2021-2026
+  role:
+    ja: 分担
+    en: Co-investigator
+- title:
+    ja: 臨床研究の質と研究者を取り巻く環境要因および心理的要因との関連
+  funding_agency:
+    ja: 文部科学省
+    en: Ministry of Education, Culture, Sports, Science and Technology
+  period: 2019-2024
+  role:
+    ja: 代表
+    en: Investigator
+- title:
+    ja: シーズ探索研究から発展する家族性地中海熱（FMF）に対するトシリズマブの医師主導治験
+  funding_agency:
+    ja: 国立研究開発法人日本医療研究開発機構
+    en: Japan Agency for Medical Research and Development
+  period: 2017-2020
   role:
     ja: 分担
     en: Co-investigator

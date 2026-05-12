@@ -286,16 +286,21 @@ def research_projects(lang, projects)
   lines << ""
   if projects["source"]
     source = projects["source"]
-    source_name = localized_value(source["name"], lang) || labels[:source_label]
-    source_text = "#{labels[:source]}: "
-    source_text += if source["url"]
-                     "<a href=\"#{source["url"]}\" target=\"_blank\" rel=\"noopener\">#{html_escape(source_name)}</a>"
-                   else
-                     html_escape(source_name)
-                   end
-    source_date = source["fetched_at"] || source["captured_at"]
-    source_text += " / #{source_date}" unless blank?(source_date)
-    lines << "<div class=\"data-note\">#{source_text}</div>"
+    updated_at = source["updated_at"]
+    if blank?(source["url"]) && !blank?(updated_at)
+      source_html = html_escape(lang == "ja" ? "#{updated_at}に更新" : "Updated #{updated_at}")
+    else
+      source_name = localized_value(source["name"], lang) || labels[:source_label]
+      source_html = "#{labels[:source]}: "
+      source_html += if source["url"]
+                       "<a href=\"#{source["url"]}\" target=\"_blank\" rel=\"noopener\">#{html_escape(source_name)}</a>"
+                     else
+                       html_escape(source_name)
+                     end
+      source_date = source["fetched_at"] || source["captured_at"] || updated_at
+      source_html += " / #{html_escape(source_date)}" unless blank?(source_date)
+    end
+    lines << "<div class=\"data-note\">#{source_html}</div>"
     lines << ""
   end
   lines << "::: {.project-list}"

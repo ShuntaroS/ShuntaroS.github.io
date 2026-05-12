@@ -183,7 +183,7 @@ Toyama S, Morishita T, Hanada M, Nagura H, Suyama K, Yoshinaga R, Makimoto N, Ko
 ::: {.pub-item}
 <div class="item-title">現代疫学 原著第4版</div>
 
-Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編; Sato S, 藤井亮輔, 芝孝一郎, 後藤匡啓, 今村文昭 監訳
+Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編; 佐藤俊太朗, 藤井亮輔, 芝孝一郎, 後藤匡啓, 今村文昭 監訳
 
 <div class="pub-meta">原著: Modern Epidemiology, 4th edition. Wolters Kluwer, 2020.</div>
 
@@ -195,7 +195,7 @@ Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編
 
 ## Research Projects and Grants
 
-<div class="data-note">Source: Application screenshots / 2026-05-12</div>
+<div class="data-note">Updated 2026-5-12</div>
 
 ::: {.project-list}
 ::: {.project-item}
@@ -276,6 +276,24 @@ Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編
 ::: {.project-facts}
 <div class="project-fact"><span>Funding agency</span><strong>Ministry of Education, Culture, Sports, Science and Technology</strong></div>
 <div class="project-fact"><span>Period</span><strong>2021-2026</strong></div>
+<div class="project-fact"><span>Role</span><strong>Co-investigator</strong></div>
+:::
+:::
+::: {.project-item}
+<div class="item-title">臨床研究の質と研究者を取り巻く環境要因および心理的要因との関連</div>
+
+::: {.project-facts}
+<div class="project-fact"><span>Funding agency</span><strong>Ministry of Education, Culture, Sports, Science and Technology</strong></div>
+<div class="project-fact"><span>Period</span><strong>2019-2024</strong></div>
+<div class="project-fact"><span>Role</span><strong>Investigator</strong></div>
+:::
+:::
+::: {.project-item}
+<div class="item-title">シーズ探索研究から発展する家族性地中海熱（FMF）に対するトシリズマブの医師主導治験</div>
+
+::: {.project-facts}
+<div class="project-fact"><span>Funding agency</span><strong>Japan Agency for Medical Research and Development</strong></div>
+<div class="project-fact"><span>Period</span><strong>2017-2020</strong></div>
 <div class="project-fact"><span>Role</span><strong>Co-investigator</strong></div>
 :::
 :::
