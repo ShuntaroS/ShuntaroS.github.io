@@ -11,6 +11,7 @@ website:
   title: "佐藤 俊太朗 / Shuntaro Sato"
   site-url: "https://shuntaros.github.io/"
   description: "佐藤俊太朗の研究者ポートフォリオ。生物統計学、臨床疫学、研究デザイン、統計解析、臨床研究支援に関する活動を掲載しています。"
+  google-analytics: "G-YCKBQZ7ZP8"
   navbar:
     pinned: true
     search: false
