@@ -111,9 +111,13 @@ body {
 }
 
 .info-card h3,
-.pub-item h3 {
+.pub-item h3,
+.project-item h3,
+.item-title {
   font-size: 1.05rem;
+  font-weight: 700;
   margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
 .timeline {
@@ -160,9 +164,17 @@ body {
   background: #fff;
 }
 
-.pub-list {
+.pub-list,
+.project-list {
   display: grid;
   gap: 0.9rem;
+}
+
+.project-item {
+  border: 1px solid var(--site-line);
+  border-radius: 8px;
+  padding: 1.1rem;
+  background: #fff;
 }
 
 .pub-actions {

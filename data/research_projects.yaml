@@ -1,0 +1,358 @@
+---
+source:
+  name: GRANTS - 研究課題統合検索
+  url: https://grants.jst.go.jp/search/?kw=%E4%BD%90%E8%97%A4%E4%BF%8A%E5%A4%AA%E6%9C%97
+  fetched_at: '2026-05-12'
+  query: 佐藤俊太朗
+manual_items: []
+jst_items:
+- title: 親密な他者への暴力予防を目的とした第三者へのエンパワーメントプログラム開発
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-25K05975/
+  grant_id: 25K05975
+  project_number: JP25K05975
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分09020:教育社会学関連
+  institution: 新潟大学
+  principal_investigator: "櫻井 香子 \n新潟大学, 人文社会科学系, 准教授"
+  period: 2025-04-01 - 2029-03-31
+  status: 交付
+  keywords: 親密なパートナーからの暴力 / 傍観者（Bystander） / 高校生 / クラスターランダム比較試験
+- title: 間質性肺疾患急性増悪後の機能予後改善を目指すリハビリテーションの開発と効果検証
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-25K02964/
+  grant_id: 25K02964
+  project_number: JP25K02964
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分59010:リハビリテーション科学関連
+  institution: 長崎大学
+  principal_investigator: "神津 玲 \n長崎大学, 医歯薬学総合研究科(保健学科), 教授"
+  period: 2025-04-01 - 2029-03-31
+  status: 交付
+  keywords: 間質性肺疾患 / 急性増悪 / リハビリテーション / 機能予後 / 日常生活活動
+- title: 予防行動が循環器疾患にもたらす多面性と分子機構の解明：多角的疫学研究
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-25K00125/
+  grant_id: 25K00125
+  project_number: JP25K00125
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分58030:衛生学および公衆衛生学分野関連:実験系を含まない
+  institution: 藤田医科大学
+  principal_investigator: "藤井 亮輔 \n藤田医科大学, 医療科学部, 講師"
+  period: 2025-04-01 - 2028-03-31
+  status: 交付
+  keywords: ゲノム疫学 / DNAメチル化 / 循環器疾患 / メンデルランダム化解析 / コホート研究
+- title: 敗血症性ショックにおける末梢循環を指標とした新規治療戦略の確立
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K12051/
+  grant_id: 24K12051
+  project_number: JP24K12051
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分55050:麻酔科学関連
+  institution: 長崎大学
+  principal_investigator: "関野 元裕 \n長崎大学, 病院(医学系), 准教授"
+  period: 2024-04-01 - 2027-03-31
+  status: 交付
+  keywords: 末梢循環 / pulse-amplitude index / パルスオキシメータ / 敗血症性ショック / 腸管循環
+- title: 妊娠期から学童期を紡ぐ保健・医療統合データベース基盤開発とエビデンス創出
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24H00659/
+  grant_id: 24H00659
+  project_number: JP24H00659
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 中区分58:社会医学、看護学およびその関連分野
+  institution: 九州大学
+  principal_investigator: "福田 治久 \n九州大学, 医学研究院, 准教授"
+  period: 2024-04-01 - 2027-03-31
+  status: 交付
+  keywords: データベース疫学 / ライフコース疫学 / 母子保健 / 学校保健 / LIFE Study
+- title: ビッグデータ活用による健康寿命延伸と医療・介護費抑制に資する口腔のエビデンス創出
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-23K24557/
+  grant_id: 23K24557
+  project_number: JP23K24557
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分57080:社会系歯学関連
+  institution: 東北大学
+  principal_investigator: "竹内 研時 \n東北大学, 歯学研究科, 准教授"
+  period: 2024-04-01 - 2027-03-31
+  status: 交付
+  keywords: 歯周病 / 糖尿病 / 医療費 / 歯周病検診 / 歯周疾患検診 / 健康寿命 / ビッグデータ / 介護費 / 因果推論 / 要介護 / 高齢者 / 現在歯数 / 嚥下機能 / 咀嚼機能 / 口腔乾燥
+- title: 安全・高信頼ソフトウェアシステムのための高階・型付き・並行プログラミング言語理論
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-23K20379/
+  grant_id: 23K20379
+  project_number: JP23K20379
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分60050:ソフトウェア関連
+  institution: 東北大学
+  principal_investigator: "住井 英二郎 \n東北大学, 情報科学研究科, 教授"
+  period: 2024-04-01 - 2026-03-31
+  status: 交付
+  keywords: プログラミング言語理論／プログラム理論 / 高階・並行・分散計算 / 型システム / 関数型プログラミング／関数型プログラミング言語 / プログラミング言語理論に基づくセキュリティ
+- title: 骨格筋量の維持に資するたんぱく質必要量と食習慣の解明
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-23K25615/
+  grant_id: 23K25615
+  project_number: JP23K25615
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分08030:家政学および生活科学関連
+  institution: 国立研究開発法人医薬基盤・健康・栄養研究所
+  principal_investigator: "畑本 陽一 \n国立研究開発法人医薬基盤・健康・栄養研究所, 国立健康・栄養研究所 栄養・代謝研究部, 主任研究員"
+  period: 2023-04-01 - 2027-03-31
+  status: 交付
+  keywords: たんぱく質代謝 / たんぱく質燃焼 / 脂肪燃焼 / 主要栄養素 / ヒューマンカロリメーター / 肥満
+- title: 関数データ解析基づく統計的モデリングの発展と多様な分野への応用
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-23K11005/
+  grant_id: 23K11005
+  project_number: JP23K11005
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分60030:統計科学関連
+  institution: 滋賀大学
+  principal_investigator: "松井 秀俊 \n滋賀大学, データサイエンス学系, 教授"
+  period: 2023-04-01 - 2028-03-31
+  status: 交付
+  keywords: 統計的モデリング / 関数データ解析 / スパース推定 / 空間データ分析
+- title: コホート・生体試料支援プラットフォーム
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-22H04923/
+  grant_id: 22H04923
+  project_number: JP22H04923
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  institution: 東京大学
+  principal_investigator: "醍醐 弥太郎 (2024-2025) \n東京大学, 医科学研究所, 特任教授\n村上 善則 (2022-2023) \n東京大学, 医科学研究所, 教授"
+  period: 2022-04-01 - 2028-03-31
+  status: 交付
+  keywords: 生体試料支援 / コホート / 臨床検体 / 一般健常人 / 大規模ゲノム解析・オミックス解析
+- title: 前向きゲノムコホート研究の縦断解析による循環器疾患の発症リスク予測モデルの構築
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-20K18943/
+  grant_id: 20K18943
+  project_number: JP20K18943
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分58030:衛生学および公衆衛生学分野関連:実験系を含まない
+  institution: 藤田医科大学
+  principal_investigator: "藤井 亮輔 \n藤田医科大学, 医療科学部, 講師"
+  period: 2022-12-19 - 2025-03-31
+  status: 終了
+  keywords: ゲノム疫学 / ポリジェニックリスクスコア / 高血圧 / 循環器疾患 / 遺伝統計学 / コホート研究 / 生活習慣 / GWAS
+- title: 腫瘍循環器リハビリテーションのQOLに着目した効果の検証
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-21K11175/
+  grant_id: 21K11175
+  project_number: JP21K11175
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分59010:リハビリテーション科学関連
+  institution: 聖マリアンナ医科大学
+  principal_investigator: "木田 圭亮 \n聖マリアンナ医科大学, 医学部, 准教授"
+  period: 2021-04-01 - 2026-03-31
+  status: 交付
+  keywords: 腫瘍循環器 / リハビリテーション / QOL
+- title: レセプトデータを基軸としたデータ駆動型臨床疫学研究の基盤開発
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-20H00563/
+  grant_id: 20H00563
+  project_number: JP20H00563
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 中区分58:社会医学、看護学およびその関連分野
+  institution: 九州大学
+  principal_investigator: "福田 治久 \n九州大学, 医学研究院, 准教授"
+  period: 2020-04-01 - 2024-03-31
+  status: 終了
+  keywords: レセプトデータ / 患者レジストリ / 臨床疫学 / ビッグデータ / データベース医学 / データ駆動型研究 / データ駆動型サイエンス
+- title: 地域住民の健康評価プラットフォームの開発と予防的保健医療介護事業の効果検証
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19K21590/
+  grant_id: 19K21590
+  project_number: JP19K21590
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 超高齢社会研究
+  institution: 九州大学
+  principal_investigator: "福田 治久 \n九州大学, 医学研究院, 准教授"
+  period: 2019-06-28 - 2023-03-31
+  status: 終了
+  keywords: 健康寿命 / 健康格差 / 医療レセプトデータ / 介護レセプトデータ / 特定健診 / 保健事業 / 予防医療 / データベース医学 / 先制保健 / レセプト / 予測モデル / 医療費
+- title: 臨床研究の質と研究者を取り巻く環境要因および心理的要因との関連
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19K20730/
+  grant_id: 19K20730
+  project_number: JP19K20730
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分90140:医療技術評価学関連
+  institution: 長崎大学
+  principal_investigator: "佐藤 俊太朗 \n長崎大学, 病院(医学系), 講師"
+  period: 2019-04-01 - 2025-03-31
+  status: 終了
+  keywords: 臨床研究 / 臨床研究数の推移 / 臨床研究法 / 分割時系列デザイン / 教育効果 / 臨床研究数のの推移 / 研究数の推移 / 時系列分断デザイン / 臨床研究の質 / 研究の質 / 心理的要因 / 環境要因 / 因果推論
+- title: 関数データに基づく経時測定データ解析法の発展
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19K11858/
+  grant_id: 19K11858
+  project_number: JP19K11858
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分60030:統計科学関連
+  institution: 滋賀大学
+  principal_investigator: "松井 秀俊 \n滋賀大学, データサイエンス学系, 教授"
+  period: 2019-04-01 - 2024-03-31
+  status: 終了
+  keywords: 統計的モデリング / 関数データ解析 / モデル選択 / 空間データ解析 / スパース推定 / 空間データ分析 / 半教師あり学習
+- title: 関節リウマチの精密医療の実現を目指す多角的な病態解析研究
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19K08886/
+  grant_id: 19K08886
+  project_number: JP19K08886
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分54020:膠原病およびアレルギー内科学関連
+  institution: 長崎大学
+  principal_investigator: "川上 純 \n長崎大学, 医歯薬学総合研究科(医学系), 教授"
+  period: 2019-04-01 - 2022-03-31
+  status: 終了
+  keywords: 関節リウマチ / 関節画像評価 / 滑膜炎 / 骨破壊 / バイオマーカー / コラーゲン誘発関節炎 / 破骨細胞 / イムノフェノタイピング / ACPA / 精密医療 / 関節画像 / 治療反応スコア
+- title: メンタルヘルス不調予防を目指した効果的な運動継続プログラムの探索
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-18K17383/
+  grant_id: 18K17383
+  project_number: JP18K17383
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 小区分58030:衛生学および公衆衛生学分野関連:実験系を含まない
+  institution: 長崎大学
+  principal_investigator: "相良 郁子 (植木郁子) \n長崎大学, 保健センター, 客員研究員"
+  period: 2018-04-01 - 2025-03-31
+  status: 終了
+  keywords: 身体活動 / 動機付け / 歩数 / モチベーション / 寄付 / 運動 / パーソナリティー / マイオカイン / パーソナリティ / 社会貢献 / 歩数推進 / personality特性 / ウェアラブル端末 / サイトカインマルチプルアッセイ / 運動継続プログラム / 歩数増加 / 身体活動継続 / メンタルヘルス不調予防 / 運動動機付け / メンタルヘルス / 経済的損失
+- title: 研究活動における科学者の不正行為を抑制するための新たな倫理教育プログラムの開発
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-17K18658/
+  grant_id: 17K18658
+  project_number: JP17K18658
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 教育学およびその関連分野
+  institution: |-
+    事業構想大学院大学 (2022)
+    琉球大学 (2021)
+    長崎大学 (2017-2020)
+  principal_investigator: "河合 孝尚 \n事業構想大学院大学, 事業構想研究科, 教授"
+  period: 2017-06-30 - 2023-03-31
+  status: 終了
+  keywords: 研究倫理教育 / Well-being / EPOCH尺度 / 不正のトライアングル / well-being / 倫理教育 / 不正リスク
+- title: 間質性肺疾患に対する新しい高流量酸素投与システムを利用した運動療法効果の検証
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-17K01506/
+  grant_id: 17K01506
+  project_number: JP17K01506
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: リハビリテーション科学・福祉工学
+  institution: 長崎大学
+  principal_investigator: "神津 玲 \n長崎大学, 医歯薬学総合研究科(保健学科), 教授"
+  period: 2017-04-01 - 2022-03-31
+  status: 終了
+  keywords: 間質性肺疾患 / 高流量鼻カニュラ酸素療法システム / 呼吸困難 / 運動時低酸素血症 / 日常生活活動 / 高流量酸素投与システム / 運動療法 / 運動耐容能
+- title: トルコと日本の自己炎症疾患発症責任分子複合体を活性化する生体・環境因子の比較調査
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-17H04656/
+  grant_id: 17H04656
+  project_number: JP17H04656
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 衛生学・公衆衛生学
+  institution: 愛媛大学
+  principal_investigator: "増本 純也 \n愛媛大学, プロテオサイエンスセンター, 教授"
+  period: 2017-04-01 - 2020-03-31
+  status: 終了
+  keywords: 自己炎症疾患 / インフラマソーム / トルコ / 環境因子 / 家族性地中海熱 / 発症トリガー / 無細胞系
+- title: 低温ショック蛋白RBM3から展開する低温による炎症制御メカニズムの解明
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-16K15762/
+  grant_id: 16K15762
+  project_number: JP16K15762
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 救急医学
+  institution: 長崎大学
+  principal_investigator: "田崎 修 \n長崎大学, 病院(医学系), 教授"
+  period: 2016-04-01 - 2020-03-31
+  status: 終了
+  keywords: 自然免疫受容体 / 低温ショック蛋白 / 自然免疫系 / 感染症 / 熱傷 / 免疫学
+- title: 全エクソンシーケンスに基づく成人スチル病の「病態制御システム」の同定
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-16K15514/
+  grant_id: 16K15514
+  project_number: JP16K15514
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 膠原病・アレルギー内科学
+  institution: 長崎大学
+  principal_investigator: "古賀 智裕 \n長崎大学, 医歯薬学総合研究科(医学系), 助教"
+  period: 2016-04-01 - 2019-03-31
+  status: 終了
+  keywords: 成人発症スチル病 / IL-1β / IL-18 / 全エクソン解析 / 成人スチル病 / 前エクソン解析 / 血清バイオマーカー / ゲノム / 免疫学 / トランスレーショナルリサーチ
+- title: 敗血症性ショックと小腸粘膜障害－新規治療ターゲットとしての基盤確立－
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-16K10942/
+  grant_id: 16K10942
+  project_number: JP16K10942
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 麻酔科学
+  institution: 長崎大学
+  principal_investigator: "関野 元裕 \n長崎大学, 病院(医学系), 講師"
+  period: 2016-04-01 - 2020-03-31
+  status: 終了
+  keywords: 小腸粘膜細胞傷害 / 敗血症性ショック / 予後予測 / 腎機能障害 / 人工心肺 / 心臓手術 / 小腸粘膜細胞 / 腸型脂肪酸結合蛋白 / 予後 / 脂肪酸結合蛋白 / 小腸粘膜障害
+- title: シトルリン化ヒストンH3を標的とした重症病態の制御
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-16H05499/
+  grant_id: 16H05499
+  project_number: JP16H05499
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 救急医学
+  institution: 長崎大学
+  principal_investigator: "田崎 修 \n長崎大学, 病院(医学系), 教授"
+  period: 2016-04-01 - 2019-03-31
+  status: 終了
+  keywords: 自然免疫受容体 / NETs / 重症外傷 / 自然免疫 / 感染症 / ヒストンH3 / シトルリン化
+- title: MRIで関節リウマチの軟骨傷害を評価し軟骨再生医療につなげる基盤研究
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-15K09530/
+  grant_id: 15K09530
+  project_number: JP15K09530
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 膠原病・アレルギー内科学
+  institution: 長崎大学
+  principal_investigator: "玉井 慎美 \n長崎大学, 医歯薬学総合研究科(医学系), 准教授"
+  period: 2015-04-01 - 2019-03-31
+  status: 終了
+  keywords: 関節リウマチ / 軟骨傷害 / MRI / 関節裂隙狭小化 / 関節軟骨
+- title: 温熱刺激によって慢性心不全患者の骨格筋萎縮を予防する新たな試み
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-26750190/
+  grant_id: '26750190'
+  project_number: JP26750190
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: リハビリテーション科学・福祉工学
+  institution: 長崎大学
+  principal_investigator: "森本 陽介 \n長崎大学, 病院(医学系), 技術職員"
+  period: 2014-04-01 - 2018-03-31
+  status: 終了
+  keywords: サルコペニア / 心不全 / 大腿四頭筋筋厚 / 慢性心不全 / polypharmacy / SPPB / 筋厚 / GNRI / β遮断薬 / 温熱刺激 / 骨格筋萎縮 / 栄養状態 / 超音波画像 / 再現性 / 骨格筋
+- title: 全身性エリテマトーデスに合併するループス腎炎の疾患標的分子と機能解析
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-26461467/
+  grant_id: '26461467'
+  project_number: JP26461467
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: 膠原病・アレルギー内科学
+  institution: 長崎大学
+  principal_investigator: "一瀬 邦弘 \n長崎大学, 医歯薬学総合研究科(医学系), 講師"
+  period: 2014-04-01 - 2017-03-31
+  status: 終了
+  keywords: ループス腎炎 / 全身性エリテマトーデス / ポドサイト / CaMKIV / CD86 / 自己免疫性疾患
+- title: 間質性肺炎に対する温熱刺激を併用した新たな運動トレーニングの介入効果を探る
+  url: https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-26350614/
+  grant_id: '26350614'
+  project_number: JP26350614
+  record_set: 科学研究費助成事業
+  funding_agency: 科学研究費助成事業
+  review_section: リハビリテーション科学・福祉工学
+  institution: 長崎大学
+  principal_investigator: "神津 玲 \n長崎大学, 医歯薬学総合研究科(保健学科), 教授"
+  period: 2014-04-01 - 2018-03-31
+  status: 終了
+  keywords: 間質性肺炎 / 温熱刺激 / 運動トレーニング / 骨格筋 / 運動耐容能 / 呼吸困難

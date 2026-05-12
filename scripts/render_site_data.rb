@@ -23,6 +23,14 @@ def blank?(value)
   value.nil? || value.to_s.strip.empty?
 end
 
+def html_escape(value)
+  value.to_s
+       .gsub("&", "&amp;")
+       .gsub("<", "&lt;")
+       .gsub(">", "&gt;")
+       .gsub('"', "&quot;")
+end
+
 def button(label, url, style = "outline-primary")
   return "" if blank?(url)
 
@@ -170,7 +178,7 @@ def publication_actions(item, lang)
   actions = []
   url = item["url"]
   pmid = item["pmid"]
-  doi = item["doi"]
+  doi = item["doi"].to_s.sub(/\.+\z/, "")
   if !blank?(pmid)
     actions << button("PubMed", url || "https://pubmed.ncbi.nlm.nih.gov/#{pmid}/")
   elsif !blank?(url)
@@ -183,7 +191,7 @@ end
 def publication_card(item, lang)
   lines = []
   lines << "::: {.pub-item}"
-  lines << "### #{item["title"]}"
+  lines << "<div class=\"item-title\">#{html_escape(item["title"])}</div>"
   lines << ""
   lines << item["authors"].to_s
   lines << ""
@@ -199,20 +207,103 @@ def publication_card(item, lang)
   lines
 end
 
-def publications(lang, selected, pubmed)
+def section_by_key(selected, key)
+  selected.fetch("sections", []).find { |section| section["key"] == key }
+end
+
+def append_publication_section(lines, section, lang, level = 3)
+  return unless section
+
+  lines << "#{"#" * level} #{section["title"][lang]}"
+  lines << ""
+  lines << "::: {.pub-list}"
+  section["items"].each { |item| lines.concat publication_card(item, lang) }
+  lines << ":::"
+  lines << ""
+end
+
+def project_card(item, lang)
+  lines = []
+  title = item["title"].is_a?(Hash) ? (item["title"][lang] || item["title"]["ja"] || item["title"]["en"]) : item["title"]
+  meta = [
+    item["project_number"],
+    item["research_category"],
+    item["period"],
+    item["status"]
+  ].reject { |value| blank?(value) }.join(" / ")
+
+  lines << "::: {.project-item}"
+  lines << "<div class=\"item-title\">#{html_escape(title)}</div>"
+  lines << ""
+  lines << "<div class=\"pub-meta\">#{meta}</div>" unless blank?(meta)
+  unless blank?(item["principal_investigator"])
+    label = lang == "ja" ? "研究代表者" : "Principal investigator"
+    lines << ""
+    lines << "**#{label}:** #{item["principal_investigator"].to_s.gsub(/\s+/, " ")}"
+  end
+  unless blank?(item["institution"])
+    label = lang == "ja" ? "研究機関" : "Institution"
+    lines << ""
+    lines << "**#{label}:** #{item["institution"].to_s.gsub(/\s+/, " ")}"
+  end
+  unless blank?(item["review_section"])
+    label = lang == "ja" ? "審査区分・研究分野" : "Review section / field"
+    lines << ""
+    lines << "**#{label}:** #{item["review_section"]}"
+  end
+  unless blank?(item["url"])
+    lines << ""
+    lines << "::: {.pub-actions}"
+    lines << button(lang == "ja" ? "詳細" : "Details", item["url"])
+    lines << ":::"
+  end
+  lines << ":::"
+  lines
+end
+
+def research_projects(lang, projects)
   labels = {
     "ja" => {
-      selected: "代表業績",
+      heading: "共同研究・競争的資金等の研究課題",
+      source: "出典",
+      source_label: "GRANTS 研究課題統合検索"
+    },
+    "en" => {
+      heading: "Research Projects and Grants",
+      source: "Source",
+      source_label: "GRANTS"
+    }
+  }[lang]
+
+  items = projects.fetch("manual_items", []) + projects.fetch("jst_items", [])
+  lines = []
+  lines << "## #{labels[:heading]}"
+  lines << ""
+  if projects["source"] && projects["source"]["url"]
+    fetched_at = projects["source"]["fetched_at"]
+    source_text = "#{labels[:source]}: <a href=\"#{projects["source"]["url"]}\" target=\"_blank\" rel=\"noopener\">#{labels[:source_label]}</a>"
+    source_text += " / #{fetched_at}" unless blank?(fetched_at)
+    lines << "<div class=\"data-note\">#{source_text}</div>"
+    lines << ""
+  end
+  lines << "::: {.project-list}"
+  items.each { |item| lines.concat project_card(item, lang) }
+  lines << ":::"
+  lines
+end
+
+def publications(lang, selected, pubmed, projects)
+  labels = {
+    "ja" => {
+      articles: "論文",
       recent: "PubMedから取得した最新論文",
-      all: "全件一覧",
       note: "PubMedデータ更新日",
       pubmed: "PubMed検索を開く",
       researchmap: "researchmapを開く"
     },
     "en" => {
-      selected: "Selected Publications",
+      articles: "Articles",
       recent: "Recent Publications from PubMed",
-      all: "Full Publication List",
       note: "PubMed data updated",
       pubmed: "Open PubMed Search",
       researchmap: "Open researchmap"
@@ -220,18 +311,11 @@ def publications(lang, selected, pubmed)
   }[lang]
 
   lines = []
-  lines << "## #{labels[:selected]}"
+  lines << "## #{labels[:articles]}"
   lines << ""
-  selected["sections"].each do |section|
-    lines << "### #{section["title"][lang]}"
-    lines << ""
-    lines << "::: {.pub-list}"
-    section["items"].each { |item| lines.concat publication_card(item, lang) }
-    lines << ":::"
-    lines << ""
-  end
-
-  lines << "## #{labels[:recent]}"
+  append_publication_section(lines, section_by_key(selected, "first_author"), lang)
+  append_publication_section(lines, section_by_key(selected, "co_first_author"), lang)
+  lines << "### #{labels[:recent]}"
   lines << ""
   lines << "<div class=\"data-note\">#{labels[:note]}: #{pubmed["updated_at"]} / #{pubmed["count"]} records found</div>"
   lines << ""
@@ -239,18 +323,20 @@ def publications(lang, selected, pubmed)
   pubmed["items"].first(5).each { |item| lines.concat publication_card(item, lang) }
   lines << ":::"
   lines << ""
-  lines << "## #{labels[:all]}"
-  lines << ""
   lines << "::: {.link-row}"
   lines << button(labels[:pubmed], "https://pubmed.ncbi.nlm.nih.gov/?term=%22Sato%2C%20Shuntaro%22%5BFull%20Author%20Name%5D", "primary")
   lines << button(labels[:researchmap], "https://researchmap.jp/shuntarosato", "outline-secondary")
   lines << ":::"
+  lines << ""
+  append_publication_section(lines, section_by_key(selected, "books"), lang, 2)
+  lines.concat research_projects(lang, projects)
   lines
 end
 
 profile = load_yaml(File.join(ROOT, "data", "profile.yaml"))
 support = load_yaml(File.join(ROOT, "data", "support.yaml"))
 selected = load_yaml(File.join(ROOT, "data", "selected_publications.yaml"))
+projects = load_yaml(File.join(ROOT, "data", "research_projects.yaml"))
 author = load_yaml(File.join(ROOT, "data", "authors", "me.yaml"))
 pubmed = JSON.parse(File.read(File.join(ROOT, "data", "pubmed.json"), encoding: "UTF-8"))
 author_links = author.fetch("links", [])
@@ -259,7 +345,7 @@ write_include("home-ja.md", hero("ja", profile["ja"], support["ja"], author_link
 write_include("home-en.md", hero("en", profile["en"], support["en"], author_links))
 write_include("cv-ja.md", cv("ja", profile["ja"]))
 write_include("cv-en.md", cv("en", profile["en"]))
-write_include("publications-ja.md", publications("ja", selected, pubmed))
-write_include("publications-en.md", publications("en", selected, pubmed))
+write_include("publications-ja.md", publications("ja", selected, pubmed, projects))
+write_include("publications-en.md", publications("en", selected, pubmed, projects))
 
 puts "Rendered Quarto include files in #{INCLUDES}"

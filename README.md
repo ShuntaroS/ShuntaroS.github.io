@@ -15,6 +15,7 @@ quarto preview
 - `data/support.yaml`: 研究支援の説明
 - `data/selected_publications.yaml`: 手動で選ぶ代表業績
 - `data/pubmed.json`: PubMedから取得した最新論文
+- `data/research_projects.yaml`: 共同研究・競争的資金等の研究課題
 - `contact.qmd`, `en/contact.qmd`: 問い合わせページ
 - `styles.scss`: Zephyrテーマに重ねる軽いデザイン調整
 
@@ -68,6 +69,7 @@ git push
 - `data/support.yaml`
 - `data/selected_publications.yaml`
 - `data/pubmed.json`
+- `data/research_projects.yaml`
 
 ```bash
 ruby scripts/render_site_data.rb
@@ -92,6 +94,39 @@ git push
 ```
 
 PubMed更新にはインターネット接続が必要です。代表業績は自動更新されないため、必要に応じて `data/selected_publications.yaml` を手で編集してください。
+
+## 研究課題を更新・追記する場合
+
+JST GRANTSから「佐藤俊太朗」の検索結果を再取得する場合は、次を実行します。
+
+```bash
+scripts/update_research_projects.rb
+ruby scripts/render_site_data.rb
+quarto render
+git status
+git add .
+git commit -m "Update research projects"
+git push
+```
+
+自分で研究課題を追記する場合は、`data/research_projects.yaml` の `manual_items` に追加します。
+
+```yaml
+manual_items:
+  - title: "研究課題名"
+    url: "https://example.com/"
+    project_number: "課題番号"
+    funding_agency: "資金配分機関"
+    research_category: "研究種目"
+    review_section: "審査区分・研究分野"
+    institution: "研究機関"
+    principal_investigator: "研究代表者"
+    period: "2026-04-01 - 2029-03-31"
+    status: "交付"
+    keywords: "キーワード1 / キーワード2"
+```
+
+`scripts/update_research_projects.rb` は `jst_items` を更新しますが、`manual_items` は残すようにしています。
 
 ## 反映確認
 
