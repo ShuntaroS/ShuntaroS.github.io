@@ -14,5 +14,4 @@ toc: false
 
 ## メール
 
-- Gmail: ご存じのGmailアドレス宛にお願いします。
 - 所属アドレス: [shuntarosato@nagasaki-u.ac.jp](mailto:shuntarosato@nagasaki-u.ac.jp)
