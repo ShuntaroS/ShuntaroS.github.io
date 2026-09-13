@@ -1,3 +1,7 @@
+shared:
+  photo: "images/shuntaro-sato.jpg"
+  email: "shuntarosato@nagasaki-u.ac.jp"
+  contact_form: "https://docs.google.com/forms/d/e/1FAIpQLSeUGg4F2KCoSaJyOb140Ndtg57VUDpPDoVsLVMbki1ikF6lBg/viewform"
 ja:
   name: "佐藤 俊太朗"
   ruby: "Shuntaro Sato"
@@ -55,7 +59,7 @@ en:
   ruby: "佐藤 俊太朗"
   affiliation: "Clinical Research Center, Nagasaki University Hospital"
   position: "Lecturer"
-  summary: "My expertise lies in biostatistics and epidemiology. I focus on developing user-friendly statistical indicators and methods, designing clinical trials and observational studies, conducting statistical analysis, providing research consultations, and conducting educational activities."
+  summary: "I am a biostatistician working in clinical research. My work brings together epidemiologic methods, study design, and statistical analysis, with an emphasis on methods and measures that researchers can use and interpret."
   degrees:
     - "Ph.D. in Medical Biostatistics"
     - "M.Sc. in Environmental Science"

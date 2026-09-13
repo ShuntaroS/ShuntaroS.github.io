@@ -1,64 +1,68 @@
 ::: {.profile-hero}
-::: {.profile-photo}
-<img src="../images/shuntaro-sato.jpg" alt="Shuntaro Sato" class="profile-image">
-:::
 ::: {.profile-copy}
-<div class="profile-kicker">Biostatistics and Epidemiology</div>
+<div class="eyebrow">Biostatistics &amp; Epidemiology</div>
 <h1 class="profile-name">Shuntaro Sato</h1>
 <div class="profile-ruby">佐藤 俊太朗</div>
-<div class="profile-lead">Lecturer / Clinical Research Center, Nagasaki University Hospital</div>
+<div class="profile-lead">Clinical Research Center, Nagasaki University Hospital<br>Lecturer</div>
+:::
+<img src="../images/shuntaro-sato.jpg" alt="Shuntaro Sato" class="profile-image" width="126" height="126">
+:::
 
-My expertise lies in biostatistics and epidemiology. I focus on developing user-friendly statistical indicators and methods, designing clinical trials and observational studies, conducting statistical analysis, providing research consultations, and conducting educational activities.
+::: {.profile-summary}
+I am a biostatistician working in clinical research. My work brings together epidemiologic methods, study design, and statistical analysis, with an emphasis on methods and measures that researchers can use and interpret.
+:::
+
+[Explore my research](research.qmd){.arrow-link}
 
 ::: {.link-row}
-[Contact](contact.qmd){.btn .btn-primary}
-[Publications](publications.qmd){.btn .btn-outline-primary}
-[Google Scholar](https://scholar.google.co.jp/citations?user=uZtTkBAAAAAJ&hl=ja){.btn .btn-sm .btn-outline-secondary target="_blank"}
-[ORCID](https://orcid.org/0000-0002-6055-3649){.btn .btn-sm .btn-outline-secondary target="_blank"}
-[researchmap](https://researchmap.jp/shuntarosato){.btn .btn-sm .btn-outline-secondary target="_blank"}
-[X](https://twitter.com/Shuntarooo3){.btn .btn-sm .btn-outline-secondary target="_blank"}
+[Google Scholar](https://scholar.google.co.jp/citations?user=uZtTkBAAAAAJ&hl=ja)
+[ORCID](https://orcid.org/0000-0002-6055-3649)
+[researchmap](https://researchmap.jp/shuntarosato)
+[X](https://twitter.com/Shuntarooo3)
+[note](https://note.com/suntarooo3)
 :::
+
+::: {.home-index}
+::: {.index-entry}
+<div class="index-number" aria-hidden="true">01</div>
+
+::: {.index-copy}
+
+## [Research](research.qmd){.arrow-link}
+
+Causal inference, time-to-event outcomes, and methods for clinical research.
+
 :::
 :::
 
-::: {.summary-band}
-## Research Support
+::: {.index-entry}
+<div class="index-number" aria-hidden="true">02</div>
 
-::: {.summary-grid}
-::: {.info-card}
-### Statistical Consultation
+::: {.index-copy}
 
-More than 100 statistical consultations per year for approximately 10 years, covering study planning, analysis strategy, and interpretation.
-:::
-::: {.info-card}
-### Hands-on Analysis Support
+## [Publications](publications.qmd){.arrow-link}
 
-Support for clinical trials, observational studies, and specified clinical trials from design to analysis.
-:::
-::: {.info-card}
-### Education and Seminars
+Selected articles, books, and research grants.
 
-Lectures and training on medical statistics, clinical research design, prediction models, and reporting guidelines.
-:::
 :::
 :::
 
-## Fields
+::: {.index-entry}
+<div class="index-number" aria-hidden="true">03</div>
 
-::: {.field-grid}
-::: {.info-card}
-### Biostatistics and Epidemiology
+::: {.index-copy}
 
-Development of user-friendly metrics and methodologies for statistical practitioners. Research design, statistical analysis, and interpretation of results in clinical studies.
+## [CV](cv.qmd){.arrow-link}
+
+Academic training, appointments, and teaching.
+
 :::
-::: {.info-card}
-### Education
-
-Instruction for healthcare professionals and students pursuing careers in medicine and biostatistics.
 :::
-::: {.info-card}
-### Clinical Research Support
 
-Collaborative work with researchers on study design development, analytical strategy consultation, statistical analysis, and manuscript peer review.
 :::
+
+::: {.contact-note}
+For research collaboration and statistical consultation, please get in touch.
+
+[Get in touch](contact.qmd){.arrow-link}
 :::

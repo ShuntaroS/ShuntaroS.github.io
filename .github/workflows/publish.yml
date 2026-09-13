@@ -30,9 +30,6 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Generate site content from data
-        run: ruby scripts/render_site_data.rb
-
       - name: Render Quarto site
         run: quarto render
 
@@ -51,4 +48,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

@@ -1,9 +1,9 @@
-## 論文
+## 論文 {#selected-publications}
 
-### 原著論文（第一著者）
+### 原著論文（第一著者） {#first-author}
 
 ::: {.pub-list}
-::: {.pub-item}
+::: {#pub-40226163 .pub-item}
 <div class="item-title">Estimation of the adjusted risk difference for very rare events, large samples, and extreme exposure frequency: Application of Vaccine Effectiveness, Networking, and Universal Safety study data</div>
 
 Sato S, Kawazoe Y, Murata F, Maeda M, Fukuda H
@@ -11,11 +11,11 @@ Sato S, Kawazoe Y, Murata F, Maeda M, Fukuda H
 <div class="pub-meta">Ann Clin Epidemiol. 2025;7(2):50-60.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/40226163/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.37737/ace.25007){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/40226163/)
+[DOI](https://doi.org/10.37737/ace.25007)
 :::
 :::
-::: {.pub-item}
+::: {#pub-38282861 .pub-item}
 <div class="item-title">Comparison design and evaluation power in cohort and self-controlled case series designs for post-authorization vaccine safety studies</div>
 
 Sato S, Kawazoe Y, Katsuta T, Fukuda H
@@ -23,11 +23,11 @@ Sato S, Kawazoe Y, Katsuta T, Fukuda H
 <div class="pub-meta">PeerJ. 2024;12:e16780.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/38282861/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.7717/peerj.16780){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/38282861/)
+[DOI](https://doi.org/10.7717/peerj.16780)
 :::
 :::
-::: {.pub-item}
+::: {#pub-38044244 .pub-item}
 <div class="item-title">Immune thrombocytopenic purpura and Guillain-Barré syndrome after 23-valent pneumococcal polysaccharide vaccination in Japan: The vaccine effectiveness, networking, and universal safety (VENUS) study</div>
 
 Sato S, Katsuta T, Kawazoe Y, Takahashi M, Murata F, Maeda M, Fukuda H, Kamidani S
@@ -35,11 +35,11 @@ Sato S, Katsuta T, Kawazoe Y, Takahashi M, Murata F, Maeda M, Fukuda H, Kamidani
 <div class="pub-meta">Vaccine. 2024;42(1):4-7.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/38044244/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.1016/j.vaccine.2023.11.053){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/38044244/)
+[DOI](https://doi.org/10.1016/j.vaccine.2023.11.053)
 :::
 :::
-::: {.pub-item}
+::: {#pub-29975732 .pub-item}
 <div class="item-title">Fast score test with global null estimation regardless of missing genotypes</div>
 
 Sato S, Ueki M; Alzheimer's Disease Neuroimaging Initiative
@@ -47,16 +47,16 @@ Sato S, Ueki M; Alzheimer's Disease Neuroimaging Initiative
 <div class="pub-meta">PLOS ONE. 2018;13(7):e0199692.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/29975732/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.1371/journal.pone.0199692){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/29975732/)
+[DOI](https://doi.org/10.1371/journal.pone.0199692)
 :::
 :::
 :::
 
-### 原著論文（共同第一著者）
+### 原著論文（共同第一著者） {#co-first-author}
 
 ::: {.pub-list}
-::: {.pub-item}
+::: {#pub-41174486 .pub-item}
 <div class="item-title">A novel scoring algorithm for chest pain can effectively support the diagnosis of acute coronary syndrome in prehospital settings: a cross-sectional study</div>
 
 Iyama K, Sato S, Akashi R, Baba K, Hayakawa K, Ikeda S, Maemura K, Tasaki O
@@ -64,11 +64,11 @@ Iyama K, Sato S, Akashi R, Baba K, Hayakawa K, Ikeda S, Maemura K, Tasaki O
 <div class="pub-meta">Int J Emerg Med. 2025 Oct 31;18(1):224.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/41174486/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.1186/s12245-025-01019-7){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/41174486/)
+[DOI](https://doi.org/10.1186/s12245-025-01019-7)
 :::
 :::
-::: {.pub-item}
+::: {#pub-37234205 .pub-item}
 <div class="item-title">Decreased community-acquired pneumonia coincided with rising awareness of precautions before governmental containment policy in Japan</div>
 
 Tashiro M, Sato S, Endo A, Hamashima R, Ito Y, Ashizawa N, Takeda K, Iwanaga N, Ide S, Fujita A, Takazono T, Yamamoto K, Tanaka T, Furumoto A, Yanagihara K, Mukae H, Fushimi K, Izumikawa K
@@ -76,11 +76,11 @@ Tashiro M, Sato S, Endo A, Hamashima R, Ito Y, Ashizawa N, Takeda K, Iwanaga N, 
 <div class="pub-meta">PNAS Nexus. 2023;2(5):pgad153.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/37234205/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.1093/pnasnexus/pgad153){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/37234205/)
+[DOI](https://doi.org/10.1093/pnasnexus/pgad153)
 :::
 :::
-::: {.pub-item}
+::: {#pub-33025889 .pub-item}
 <div class="item-title">Next-generation sequencing of the whole MEFV gene in Japanese patients with familial Mediterranean fever: a case-control association study</div>
 
 Koga T, Sato S, Mishima H, Migita K, Endo Y, Umeda M, Sumiyoshi R, Nonaka F, Fukui S, Kawashiri SY, Iwamoto N, Ichinose K, Tamai M, Nakamura H, Origuchi T, Ueki Y, Masumoto J, Agematsu K, Yachie A, Yoshiura KI, Eguchi K, Kawakami A
@@ -88,10 +88,10 @@ Koga T, Sato S, Mishima H, Migita K, Endo Y, Umeda M, Sumiyoshi R, Nonaka F, Fuk
 <div class="pub-meta">Clin Exp Rheumatol. 2020;38 Suppl 127(5):35-41.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/33025889/){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/33025889/)
 :::
 :::
-::: {.pub-item}
+::: {#pub-31518984 .pub-item}
 <div class="item-title">Impact of perioperative aneurysm rebleeding after subarachnoid hemorrhage</div>
 
 Horie N, Sato S, Kaminogo M, Morofuji Y, Izumo T, Anda T, Matsuo T
@@ -99,88 +99,108 @@ Horie N, Sato S, Kaminogo M, Morofuji Y, Izumo T, Anda T, Matsuo T
 <div class="pub-meta">J Neurosurg. 2019 Sep 13:1-10.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/31518984/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.3171/2019.6.JNS19704){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/31518984/)
+[DOI](https://doi.org/10.3171/2019.6.JNS19704)
 :::
 :::
 :::
 
-### PubMedから取得した最新論文
+### PubMedから取得した最新論文 {#recent-publications}
 
-<div class="data-note">PubMedデータ更新日: 2026-05-06 / 170 records found</div>
+<div class="data-note">PubMedデータ更新日: 2026-09-13 / 178 records found</div>
 
 ::: {.pub-list}
-::: {.pub-item}
-<div class="item-title">Efficacy and safety of filgotinib versus tocilizumab in active rheumatoid arthritis: A randomized, open-label, multicenter study with clinical and musculoskeletal ultrasound evaluation (TRANSFORM study)</div>
+::: {#recent-pub-42699223 .pub-item}
+<div class="item-title">Respiratory Support With Nasal High Flow Reduces Opioid Requirements During Endoscopic Retrograde Cholangiopancreatography</div>
 
-Shimizu T, Kawashiri SY, Koga T, Kiya R, Morita M, Kawasaki R, Kuroda S, Tashiro S, et al.
+Mori T, Ayuse T, Sato S, Ichinomia T, Yano R, Shimakura A, Nakao Y, Takahashi K, et al.
 
-<div class="pub-meta">Drug Discov Ther. 2026.</div>
-
-::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/42036316/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.5582/ddt.2026.01008){.btn .btn-sm .btn-outline-primary target="_blank"}
-:::
-:::
-::: {.pub-item}
-<div class="item-title">Total energy expenditure and physical activity levels in functionally independent and limited older adults: A cross-sectional comparative study</div>
-
-Tomiga-Takae R, Sonoda Y, Yasukata J, Kose Y, Tomiga Y, Yamamoto T, Yoshimura E, Yamada Y, et al.
-
-<div class="pub-meta">Clin Nutr ESPEN. 2026. 72. 102825.</div>
+<div class="pub-meta">DEN Open. 2026. 7(1). e70421.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/41276174/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.1016/j.clnesp.2025.11.145){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/42699223/)
+[DOI](https://doi.org/10.1002/deo2.70421)
 :::
 :::
-::: {.pub-item}
-<div class="item-title">Analgesic effects of Goreisan in patients with glossodynia: A preliminary exploratory study</div>
+::: {#recent-pub-42578996 .pub-item}
+<div class="item-title">Ultra-early versus early adjunctive vasopressin initiation after norepinephrine escalation in septic shock: a target trial emulation</div>
 
-Ayuse T, Sato S, Okayasu I, Tachi-Yoshida M, Sato J, Saisu H, Yamazaki Y, Imura H
+Nakashima T, Ichinomiya T, Nakajima M, Shinozaki T, Shibata J, Goto T, Sato S, Hara T
 
-<div class="pub-meta">Drug Discov Ther. 2026. 20(1). 80-84.</div>
+<div class="pub-meta">Intensive Care Med. 2026.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/41692469/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.5582/ddt.2025.01128){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/42578996/)
+[DOI](https://doi.org/10.1007/s00134-026-08575-3)
 :::
 :::
-::: {.pub-item}
-<div class="item-title">Active vaccine safety monitoring system using health insurance claims data in Japan: The Vaccine Effectiveness, Networking, and Universal Safety (VENUS) study</div>
+::: {#recent-pub-42380033 .pub-item}
+<div class="item-title">Predicting Nonrecovery of Muscle Strength in Critically Ill Patients with Intensive Care Unit-Acquired Weakness</div>
 
-Katsuta T, Sato S, Kawazoe Y, Fukuda H
+Nagura H, Oikawa M, Hanada M, Yano Y, Watanabe T, Tanaka Y, Takeuchi R, Sato S, et al.
 
-<div class="pub-meta">Vaccine. 2026. 74. 128209.</div>
+<div class="pub-meta">Am J Crit Care. 2026. 35(4). 276-285.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/41512504/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.1016/j.vaccine.2026.128209){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/42380033/)
+[DOI](https://doi.org/10.4037/ajcc2026710)
 :::
 :::
-::: {.pub-item}
-<div class="item-title">Prehabilitation during oesophageal cancer neoadjuvant chemotherapy and postoperative functional exercise capacity</div>
+::: {#recent-pub-42315267 .pub-item}
+<div class="item-title">AMI-SSS01 portable phonocardiographic examination with AI-assisted assessment for detecting heart failure exacerbations in home-based medical care in Japanese primary care clinics: a study protocol for a randomised controlled feasibility trial</div>
 
-Toyama S, Morishita T, Hanada M, Nagura H, Suyama K, Yoshinaga R, Makimoto N, Kobayashi S, et al.
+Hamada K, Miyata J, Nakayama F, Tanigawa K, Honda H, Uehara H, Masuda S, Kaneko M, et al.
 
-<div class="pub-meta">BMJ Support Palliat Care. 2026. 16(2). 407-416.</div>
+<div class="pub-meta">BMJ Open. 2026. 16(6). e117953.</div>
 
 ::: {.pub-actions}
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/41469166/){.btn .btn-sm .btn-outline-primary target="_blank"}
-[DOI](https://doi.org/10.1136/spcare-2025-005928){.btn .btn-sm .btn-outline-primary target="_blank"}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/42315267/)
+[DOI](https://doi.org/10.1136/bmjopen-2026-117953)
+:::
+:::
+::: {#recent-pub-42273305 .pub-item}
+<div class="item-title">Characteristics and Outcomes of Multisystemic Inflammation in Patients Clinically Diagnosed With Non-COVID-19-Related Fulminant Myocarditis</div>
+
+Fukushima T, Kawano H, Sato S, Kanaoka K, Onoue K, Saito Y, Motokawa T, Honda T, et al.
+
+<div class="pub-meta">Circ Rep. 2026. 8(6). 970-979.</div>
+
+::: {.pub-actions}
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/42273305/)
+[DOI](https://doi.org/10.1253/circrep.CR-26-0068)
 :::
 :::
 :::
 
 ::: {.link-row}
-[PubMed検索を開く](https://pubmed.ncbi.nlm.nih.gov/?term=%22Sato%2C%20Shuntaro%22%5BFull%20Author%20Name%5D){.btn .btn-sm .btn-primary target="_blank"}
-[researchmapを開く](https://researchmap.jp/shuntarosato){.btn .btn-sm .btn-outline-secondary target="_blank"}
+[PubMed検索を開く](https://pubmed.ncbi.nlm.nih.gov/?term=%22Sato%2C%20Shuntaro%22%5BFull%20Author%20Name%5D)
+[researchmapを開く](https://researchmap.jp/shuntarosato)
 :::
 
-## 書籍
+## 書籍 {#books}
 
 ::: {.pub-list}
-::: {.pub-item}
+::: {.pub-item .book-item}
+<img src="images/books/epidemiology-by-design-ja.jpg" alt="『疫学のデザイン入門 — 健康科学への因果的アプローチ』の書影" class="book-cover" loading="lazy">
+
+::: {.book-copy}
+
+<div class="item-title">疫学のデザイン入門 — 健康科学への因果的アプローチ</div>
+
+Daniel Westreich 著; 佐藤俊太朗, 藤井亮輔, 井上浩輔 訳
+
+<div class="pub-meta">学術図書出版社, 2026年7月. ISBN 978-4-7806-1477-0.</div>
+
+::: {.pub-actions}
+[出版社のページ](https://www.gakujutsu.co.jp/product/978-4-7806-1477-0/)
+:::
+:::
+:::
+::: {.pub-item .book-item}
+<img src="images/books/modern-epidemiology-ja.jpg" alt="『現代疫学 原著第4版』の書影" class="book-cover" loading="lazy">
+
+::: {.book-copy}
+
 <div class="item-title">現代疫学 原著第4版</div>
 
 Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編; 佐藤俊太朗, 藤井亮輔, 芝孝一郎, 後藤匡啓, 今村文昭 監訳
@@ -188,12 +208,13 @@ Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編
 <div class="pub-meta">原著: Modern Epidemiology, 4th edition. Wolters Kluwer, 2020.</div>
 
 ::: {.pub-actions}
-[リンク](https://amzn.asia/d/2nWmtYv){.btn .btn-sm .btn-outline-primary target="_blank"}
+[リンク](https://amzn.asia/d/2nWmtYv)
+:::
 :::
 :::
 :::
 
-## 共同研究・競争的資金等の研究課題
+## 共同研究・競争的資金等の研究課題 {#research-grants}
 
 <div class="data-note">2026-5-12に更新</div>
 

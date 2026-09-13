@@ -1,8 +1,8 @@
 ---
-title: "Bio"
-page-layout: full
-toc: false
-body-class: home
+title: "Shuntaro Sato"
+description: "Shuntaro Sato, biostatistician and Lecturer at the Clinical Research Center, Nagasaki University Hospital. Research, publications, and academic profile."
+body-classes: home
+homepage: true
 ---
 
 {{< include ../_includes/home-en.md >}}

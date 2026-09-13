@@ -1,0 +1,47 @@
+---
+title: "Research"
+subtitle: "Biostatistics · Epidemiologic methods"
+description: "Shuntaro Sato is a biostatistician at Nagasaki University Hospital. Research interests include causal inference, time-to-event outcomes, and statistical methods for clinical studies."
+---
+
+{{< include ../_includes/research-profile-en.md >}}
+
+::: {.research-intro .lead}
+I am a biostatistician working at the intersection of statistical methodology and clinical research. I study methods and effect measures that help researchers design studies and interpret their findings.
+:::
+
+::: {.research-topic}
+## [01]{.topic-number aria-hidden="true"} Causal inference & observational studies
+
+I am interested in how study design and confounding adjustment inform the estimation of exposure effects. My published work examines cohort and self-controlled case series designs for vaccine safety studies, as well as adjusted risk differences for rare events.
+
+[Selected methodological work](#selected-publications){.arrow-link}
+:::
+
+::: {.research-topic}
+## [02]{.topic-number aria-hidden="true"} Time-to-event outcomes
+
+My interests include the analysis and interpretation of time-to-event data in clinical research. My teaching addresses practical questions about group comparisons, effect estimation, and the reporting of survival analyses.
+
+[Public teaching record (Japanese, PDF)](https://cdn.kyodonewsprwire.jp/prwfile/release/M106906/202404260076/_prw_PR1fl_cDK0Xn4i.pdf){.arrow-link}
+:::
+
+::: {.research-topic}
+## [03]{.topic-number aria-hidden="true"} Statistical methods for clinical research
+
+I collaborate on clinical trials and observational studies, from study design to analysis and interpretation. A recurring focus in my methodological work is the performance of statistical measures under conditions encountered in practice, including sparse outcomes in large datasets.
+
+[Publications and collaborations](publications.qmd){.arrow-link}
+:::
+
+## Selected publications {#selected-publications}
+
+{{< include ../_includes/research-selected-en.md >}}
+
+[View all publications](publications.qmd){.arrow-link}
+
+::: {.contact-note}
+I welcome inquiries about methodological collaboration and clinical research.
+
+[Get in touch](contact.qmd){.arrow-link}
+:::

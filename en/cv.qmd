@@ -1,8 +1,6 @@
 ---
 title: "CV"
-page-layout: full
-toc: true
+subtitle: "Education, appointments & teaching"
 ---
 
 {{< include ../_includes/cv-en.md >}}
-

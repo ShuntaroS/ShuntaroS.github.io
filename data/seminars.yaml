@@ -1,0 +1,45 @@
+# null は未確定の編集用プレースホルダーです。公開画面では相談案内になります。
+# 過去の開催時間・参加者層を、今後の標準条件として流用しないでください。
+show_sources: false # 開催案内・資料リンクは表示しません。
+sections:
+  - id: lectures
+    title: "Lectures — 講義"
+    description: "これまでの講義・セミナーで扱ってきたテーマです。対象者や目的に応じた内容をご相談いただけます。"
+    items:
+      - title: "医学統計学・臨床研究デザイン"
+        description: "医学統計学と、研究で知りたいことに応じた研究デザイン・解析方法の考え方を扱います。"
+        audience: null
+        level: null
+        duration: null
+        outcomes: "推定したいことと、研究計画・解析方法との関係。"
+        source:
+          label: "大学での担当科目を見る"
+          url: "cv.html#教育"
+      - title: "生存時間データの解析と解釈"
+        description: "イベント発生までの時間を扱う解析について、群間比較、効果の推定、結果の解釈を取り上げます。"
+        audience: null
+        level: null
+        duration: null
+        outcomes: "生存時間解析の結果の読み方と、研究計画書・論文での記載に関する考え方。"
+        source:
+          label: "過去の開催案内（2024年・PDF）"
+          url: "https://cdn.kyodonewsprwire.jp/prwfile/release/M106906/202404260076/_prw_PR1fl_cDK0Xn4i.pdf"
+      - title: "観察研究と因果推論"
+        description: "観察研究から効果を考えるための基本的な枠組みと、研究デザインを扱います。"
+        audience: null
+        level: null
+        duration: null
+        outcomes: "観察研究で因果効果を考える際に必要な仮定の基礎。"
+        source:
+          label: "公開講義資料を見る"
+          url: "https://speakerdeck.com/shuntaros/observational-studies-causal-inference-what-if-chapter-3"
+  - id: workshops
+    title: "Workshops — 演習・研修"
+    description: "演習を含む研修については、扱いたいテーマや参加者の経験を添えてご相談ください。以下の詳細は未定です。"
+    items:
+      - title: "演習を含む研修のご相談"
+        description: "内容・使用する教材・実施形式は、ご相談のうえ決定します。"
+        audience: null
+        level: null
+        duration: null
+        outcomes: null

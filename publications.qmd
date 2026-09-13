@@ -1,7 +1,13 @@
 ---
-title: "業績"
-page-layout: full
-toc: true
+title: "Publications"
+subtitle: "論文・書籍・研究課題"
 ---
+
+::: {.section-links}
+[原著論文](#selected-publications)
+[最近の論文](#recent-publications)
+[書籍](#books)
+[研究課題](#research-grants)
+:::
 
 {{< include _includes/publications-ja.md >}}
