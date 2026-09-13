@@ -1,7 +1,6 @@
 ---
-title: "学歴・職歴"
-page-layout: full
-toc: true
+title: "CV"
+subtitle: "学歴・職歴・教育"
 ---
 
 {{< include _includes/cv-ja.md >}}

@@ -16,7 +16,11 @@ end
 
 def write_include(name, lines)
   FileUtils.mkdir_p(INCLUDES)
-  File.write(File.join(INCLUDES, name), lines.join("\n") + "\n", mode: "w", encoding: "UTF-8")
+  path = File.join(INCLUDES, name)
+  content = lines.join("\n") + "\n"
+  return if File.exist?(path) && File.read(path, encoding: "UTF-8") == content
+
+  File.write(path, content, mode: "w", encoding: "UTF-8")
 end
 
 def blank?(value)
@@ -38,10 +42,10 @@ def localized_value(value, lang)
   value[lang] || value["ja"] || value["en"] || value.values.find { |candidate| !blank?(candidate) }
 end
 
-def button(label, url, style = "outline-primary")
+def text_link(label, url)
   return "" if blank?(url)
 
-  "[#{label}](#{url}){.btn .btn-sm .btn-#{style} target=\"_blank\"}"
+  "[#{label}](#{url})"
 end
 
 def link_label(link)
@@ -55,75 +59,44 @@ def link_label(link)
   "Link"
 end
 
-def hero(lang, profile, support, author_links)
-  image = lang == "ja" ? "images/shuntaro-sato.jpg" : "../images/shuntaro-sato.jpg"
-  contact = lang == "ja" ? "contact.qmd" : "contact.qmd"
-  publications = lang == "ja" ? "publications.qmd" : "publications.qmd"
-  labels = {
-    "ja" => {
-      kicker: "Biostatistics and Epidemiology",
-      contact: "問い合わせ",
-      publications: "業績を見る",
-      summary: "研究支援",
-      fields: "専門領域"
-    },
-    "en" => {
-      kicker: "Biostatistics and Epidemiology",
-      contact: "Contact",
-      publications: "Publications",
-      summary: "Research Support",
-      fields: "Fields"
-    }
-  }[lang]
-
-  lines = []
-  lines << "::: {.profile-hero}"
-  lines << "::: {.profile-photo}"
-  lines << "<img src=\"#{image}\" alt=\"#{profile["name"]}\" class=\"profile-image\">"
-  lines << ":::"
-  lines << "::: {.profile-copy}"
-  lines << "<div class=\"profile-kicker\">#{labels[:kicker]}</div>"
-  lines << "<h1 class=\"profile-name\">#{profile["name"]}</h1>"
-  lines << "<div class=\"profile-ruby\">#{profile["ruby"]}</div>" unless blank?(profile["ruby"])
-  lines << "<div class=\"profile-lead\">#{profile["position"]} / #{profile["affiliation"]}</div>"
-  lines << ""
-  lines << profile["summary"]
-  lines << ""
-  lines << "::: {.link-row}"
-  lines << "[#{labels[:contact]}](#{contact}){.btn .btn-primary}"
-  lines << "[#{labels[:publications]}](#{publications}){.btn .btn-outline-primary}"
-  author_links.each do |link|
-    lines << button(link_label(link), link["url"], "outline-secondary")
+def hero(lang, profile, shared, author_links)
+  ja = lang == "ja"
+  image = (ja ? "" : "../") + shared.fetch("photo")
+  lines = [
+    '::: {.profile-hero}',
+    '::: {.profile-copy}',
+    '<div class="eyebrow">Biostatistics &amp; Epidemiology</div>',
+    "<h1 class=\"profile-name\">#{html_escape(profile["name"])}</h1>",
+    "<div class=\"profile-ruby\">#{html_escape(profile["ruby"])}</div>",
+    "<div class=\"profile-lead\">#{html_escape(profile["affiliation"])}<br>#{html_escape(profile["position"])}</div>",
+    ':::',
+    "<img src=\"#{image}\" alt=\"#{html_escape(profile["name"])}\" class=\"profile-image\" width=\"126\" height=\"126\">",
+    ':::', '', '::: {.profile-summary}', profile["summary"], ':::', '',
+    "[#{ja ? '研究について' : 'Explore my research'}](research.qmd){.arrow-link}", '',
+    '::: {.link-row}'
+  ]
+  author_links.each { |link| lines << text_link(link_label(link), link["url"]) }
+  lines.concat [':::', '', '::: {.home-index}']
+  entries = if ja
+    [
+      ["Publications", "publications.qmd", "原著論文、書籍、共同研究・競争的資金等の研究課題。"],
+      ["Seminars", "seminars.qmd", "医学統計学や臨床研究の講義・研修について。"],
+      ["CV", "cv.qmd", "学歴、職歴、大学での教育活動。"]
+    ]
+  else
+    [
+      ["Research", "research.qmd", "Causal inference, time-to-event outcomes, and methods for clinical research."],
+      ["Publications", "publications.qmd", "Selected articles, books, and research grants."],
+      ["CV", "cv.qmd", "Academic training, appointments, and teaching."]
+    ]
   end
-  lines << ":::"
-  lines << ":::"
-  lines << ":::"
-  lines << ""
-  lines << "::: {.summary-band}"
-  lines << "## #{labels[:summary]}"
-  lines << ""
-  lines << "::: {.summary-grid}"
-  support["summary"].each do |item|
-    lines << "::: {.info-card}"
-    lines << "### #{item["title"]}"
-    lines << ""
-    lines << item["body"]
-    lines << ":::"
+  entries.each_with_index do |(title, href, description), i|
+    lines.concat ['::: {.index-entry}', "<div class=\"index-number\" aria-hidden=\"true\">0#{i + 1}</div>", '', '::: {.index-copy}', '',
+                  "## [#{title}](#{href}){.arrow-link}", '', description, '', ':::', ':::', '']
   end
-  lines << ":::"
-  lines << ":::"
-  lines << ""
-  lines << "## #{labels[:fields]}"
-  lines << ""
-  lines << "::: {.field-grid}"
-  profile["fields"].each do |field|
-    lines << "::: {.info-card}"
-    lines << "### #{field["title"]}"
-    lines << ""
-    lines << field["body"]
-    lines << ":::"
-  end
-  lines << ":::"
+  lines.concat [':::', '', '::: {.contact-note}',
+                ja ? '共同研究・統計相談・セミナーのご相談をお受けしています。' : 'For research collaboration and statistical consultation, please get in touch.', '',
+                "[#{ja ? 'お問い合わせ' : 'Get in touch'}](contact.qmd){.arrow-link}", ':::']
   lines
 end
 
@@ -187,17 +160,26 @@ def publication_actions(item, lang)
   pmid = item["pmid"]
   doi = item["doi"].to_s.sub(/\.+\z/, "")
   if !blank?(pmid)
-    actions << button("PubMed", url || "https://pubmed.ncbi.nlm.nih.gov/#{pmid}/")
+    actions << text_link("PubMed", url || "https://pubmed.ncbi.nlm.nih.gov/#{pmid}/")
   elsif !blank?(url)
-    actions << button(lang == "ja" ? "リンク" : "Link", url)
+    label = localized_value(item["url_label"], lang) || (lang == "ja" ? "リンク" : "Link")
+    actions << text_link(label, url)
   end
-  actions << button("DOI", "https://doi.org/#{doi}") unless blank?(doi)
+  actions << text_link("DOI", "https://doi.org/#{doi}") unless blank?(doi)
   actions
 end
 
-def publication_card(item, lang)
+def publication_card(item, lang, prefix = "pub")
   lines = []
-  lines << "::: {.pub-item}"
+  anchor = blank?(item["pmid"]) ? "" : "##{prefix}-#{item["pmid"]} "
+  cover = item["cover"]
+  lines << "::: {#{anchor}.pub-item#{blank?(cover) ? '' : ' .book-item'}}"
+  unless blank?(cover)
+    cover_path = (lang == "ja" ? "" : "../") + cover
+    alt = lang == "ja" ? "『#{item['title']}』の書影" : "Cover: #{item['title']}"
+    lines << "<img src=\"#{html_escape(cover_path)}\" alt=\"#{html_escape(alt)}\" class=\"book-cover\" loading=\"lazy\">"
+    lines.concat ["", "::: {.book-copy}", ""]
+  end
   lines << "<div class=\"item-title\">#{html_escape(item["title"])}</div>"
   lines << ""
   lines << item["authors"].to_s
@@ -210,6 +192,7 @@ def publication_card(item, lang)
     actions.each { |action| lines << action }
     lines << ":::"
   end
+  lines << ":::" unless blank?(cover)
   lines << ":::"
   lines
 end
@@ -221,7 +204,7 @@ end
 def append_publication_section(lines, section, lang, level = 3)
   return unless section
 
-  lines << "#{"#" * level} #{section["title"][lang]}"
+  lines << "#{"#" * level} #{section["title"][lang]} {##{section["key"].tr("_", "-")}}"
   lines << ""
   lines << "::: {.pub-list}"
   section["items"].each { |item| lines.concat publication_card(item, lang) }
@@ -282,7 +265,7 @@ def research_projects(lang, projects)
   curated_items = projects.fetch("items", [])
   items = curated_items.empty? ? projects.fetch("manual_items", []) + projects.fetch("jst_items", []) : curated_items
   lines = []
-  lines << "## #{labels[:heading]}"
+  lines << "## #{labels[:heading]} {#research-grants}"
   lines << ""
   if projects["source"]
     source = projects["source"]
@@ -328,25 +311,117 @@ def publications(lang, selected, pubmed, projects)
   }[lang]
 
   lines = []
-  lines << "## #{labels[:articles]}"
+  lines << "## #{labels[:articles]} {#selected-publications}"
   lines << ""
   append_publication_section(lines, section_by_key(selected, "first_author"), lang)
   append_publication_section(lines, section_by_key(selected, "co_first_author"), lang)
-  lines << "### #{labels[:recent]}"
+  lines << "### #{labels[:recent]} {#recent-publications}"
   lines << ""
   lines << "<div class=\"data-note\">#{labels[:note]}: #{pubmed["updated_at"]} / #{pubmed["count"]} records found</div>"
   lines << ""
   lines << "::: {.pub-list}"
-  pubmed["items"].first(5).each { |item| lines.concat publication_card(item, lang) }
+  pubmed["items"].first(5).each { |item| lines.concat publication_card(item, lang, "recent-pub") }
   lines << ":::"
   lines << ""
   lines << "::: {.link-row}"
-  lines << button(labels[:pubmed], "https://pubmed.ncbi.nlm.nih.gov/?term=%22Sato%2C%20Shuntaro%22%5BFull%20Author%20Name%5D", "primary")
-  lines << button(labels[:researchmap], "https://researchmap.jp/shuntarosato", "outline-secondary")
+  lines << text_link(labels[:pubmed], "https://pubmed.ncbi.nlm.nih.gov/?term=%22Sato%2C%20Shuntaro%22%5BFull%20Author%20Name%5D")
+  lines << text_link(labels[:researchmap], "https://researchmap.jp/shuntarosato")
   lines << ":::"
   lines << ""
   append_publication_section(lines, section_by_key(selected, "books"), lang, 2)
   lines.concat research_projects(lang, projects)
+  lines
+end
+
+# Navigation is declared once; language counterparts are resolved at build time.
+NAVIGATION = {
+  "ja" => %w[research publications seminars cv contact],
+  "en" => %w[research publications cv contact]
+}.freeze
+PAGE_LABELS = {"research" => "Research", "publications" => "Publications", "seminars" => "Seminars", "cv" => "CV", "contact" => "Contact"}.freeze
+
+def site_layout(lang, page, profile, author_links)
+  ja = lang == "ja"
+  other = ja ? "en" : "ja"
+  counterpart = (NAVIGATION[other] + ["index"]).include?(page) ? page : "research"
+  language_href = (ja ? "en/" : "../") + "#{counterpart}.html"
+  nav = NAVIGATION[lang].map do |key|
+    current = key == page ? ' aria-current="page"' : ''
+    "<li><a href=\"#{key}.html\"#{current}>#{PAGE_LABELS.fetch(key)}</a></li>"
+  end.join("\n")
+  nav += "<li><a class=\"language-link\" href=\"#{language_href}\" lang=\"#{other}\" hreflang=\"#{other}\">#{ja ? 'English' : '日本語'}</a></li>"
+  footer_links = author_links.reject { |link| %w[X note].include?(link_label(link)) }.map do |link|
+    "<a href=\"#{html_escape(link["url"])}\">#{html_escape(link_label(link))}</a>"
+  end.join("\n")
+  {
+    "header" => <<~HTML,
+      <a class="skip-link" href="#page-start">#{ja ? '本文へ移動' : 'Skip to content'}</a>
+      <header class="site-header">
+        <nav class="site-nav" aria-label="#{ja ? 'メインナビゲーション' : 'Main navigation'}">
+          <a class="site-brand" href="index.html"><span class="brand-name">#{html_escape(profile["name"])}</span><span class="brand-note">#{ja ? 'Shuntaro Sato' : 'Biostatistics &amp; Epidemiology'}</span></a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">#{ja ? 'メニュー' : 'Menu'}</button>
+          <ul id="site-navigation" class="nav-links">#{nav}</ul>
+        </nav>
+      </header>
+      <div id="page-start" tabindex="-1"></div>
+    HTML
+    "footer" => <<~HTML
+      <footer class="site-footer"><div class="footer-inner">
+        <span>© 2026 #{html_escape(profile["name"])}</span>
+        <nav class="footer-links" aria-label="#{ja ? '研究者プロフィール' : 'Research profiles'}">#{footer_links}</nav>
+      </div></footer>
+    HTML
+  }
+end
+
+def research_profile(profile)
+  ['::: {.research-identity}',
+   "**#{profile["name"]}**<br>#{profile["position"]} · #{profile["affiliation"]}", ':::']
+end
+
+def research_selected(lang, selected)
+  lines = ['::: {.pub-list}']
+  selected.fetch("sections").each do |section|
+    section.fetch("items").select { |item| item["research_selected"] }.each do |item|
+      lines.concat publication_card(item, lang)
+    end
+  end
+  lines << ':::'
+  lines
+end
+
+def seminars(data)
+  lines = []
+  data.fetch("sections").each do |section|
+    lines.concat ["## #{section.fetch('title')} {##{section.fetch('id')}}", '', section.fetch("description"), '']
+    section.fetch("items").each do |item|
+      lines.concat ['::: {.seminar-entry}', "### #{item.fetch('title')}", '', item.fetch("description"), '', '<dl class="seminar-facts">']
+      {"audience" => "対象者", "level" => "レベル", "duration" => "想定時間", "outcomes" => "参加者が学べること"}.each do |key, label|
+        value = item[key]
+        value = key == "outcomes" ? "内容はご相談のうえ決定します。" : "ご相談ください" if blank?(value)
+        lines << "<div><dt>#{label}</dt><dd>#{html_escape(value)}</dd></div>"
+      end
+      lines << '</dl>'
+      if data["show_sources"] && item["source"]
+        lines.concat ['', "<p class=\"seminar-source\"><a href=\"#{html_escape(item['source']['url'])}\">#{html_escape(item['source']['label'])}</a></p>"]
+      end
+      lines.concat [':::', '']
+    end
+  end
+  lines
+end
+
+def contact(lang, shared, support)
+  ja = lang == "ja"
+  lines = ["## #{ja ? 'メール' : 'Email'}", '',
+           "[#{shared.fetch('email')}](mailto:#{shared.fetch('email')})", '',
+           "## #{ja ? 'お問い合わせフォーム' : 'Contact form'}", '',
+           ja ? 'フォームからもご連絡いただけます。' : 'You can also reach me through the contact form.', '',
+           "[#{ja ? 'フォームを開く' : 'Open contact form'}](#{shared.fetch('contact_form')}){.action-link}", '',
+           "## #{ja ? '研究支援・教育' : 'Research support and teaching'}", '']
+  support.fetch("summary").each do |item|
+    lines.concat ["### #{item.fetch('title')}", '', item.fetch("body"), '']
+  end
   lines
 end
 
@@ -355,14 +430,22 @@ support = load_yaml(File.join(ROOT, "data", "support.yaml"))
 selected = load_yaml(File.join(ROOT, "data", "selected_publications.yaml"))
 projects = load_yaml(File.join(ROOT, "data", "research_projects.yaml"))
 author = load_yaml(File.join(ROOT, "data", "authors", "me.yaml"))
+seminar_data = load_yaml(File.join(ROOT, "data", "seminars.yaml"))
 pubmed = JSON.parse(File.read(File.join(ROOT, "data", "pubmed.json"), encoding: "UTF-8"))
 author_links = author.fetch("links", [])
-
-write_include("home-ja.md", hero("ja", profile["ja"], support["ja"], author_links))
-write_include("home-en.md", hero("en", profile["en"], support["en"], author_links))
-write_include("cv-ja.md", cv("ja", profile["ja"]))
-write_include("cv-en.md", cv("en", profile["en"]))
-write_include("publications-ja.md", publications("ja", selected, pubmed, projects))
-write_include("publications-en.md", publications("en", selected, pubmed, projects))
-
+layouts = {}
+%w[ja en].each do |lang|
+  write_include("home-#{lang}.md", hero(lang, profile[lang], profile.fetch("shared"), author_links))
+  write_include("cv-#{lang}.md", cv(lang, profile[lang]))
+  write_include("publications-#{lang}.md", publications(lang, selected, pubmed, projects))
+  write_include("research-profile-#{lang}.md", research_profile(profile[lang])) if lang == "en"
+  write_include("research-selected-#{lang}.md", research_selected(lang, selected))
+  write_include("contact-#{lang}.md", contact(lang, profile.fetch("shared"), support[lang]))
+  (NAVIGATION[lang] + ["index"]).each do |page|
+    input = (lang == "ja" ? "" : "en/") + "#{page}.qmd"
+    layouts[input] = site_layout(lang, page, profile[lang], author_links)
+  end
+end
+write_include("seminars-ja.md", seminars(seminar_data))
+write_include("site-layouts.json", [JSON.pretty_generate(layouts)])
 puts "Rendered Quarto include files in #{INCLUDES}"

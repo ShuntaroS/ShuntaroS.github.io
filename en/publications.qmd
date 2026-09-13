@@ -1,8 +1,13 @@
 ---
 title: "Publications"
-page-layout: full
-toc: true
+subtitle: "Articles, books & research grants"
 ---
 
-{{< include ../_includes/publications-en.md >}}
+::: {.section-links}
+[Selected articles](#selected-publications)
+[Recent publications](#recent-publications)
+[Books](#books)
+[Research grants](#research-grants)
+:::
 
+{{< include ../_includes/publications-en.md >}}

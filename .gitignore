@@ -1,5 +1,6 @@
 /.quarto/
 /_site/
+/_includes/site-layouts.json
 /.Rproj.user/
 .DS_Store
 /hugo/

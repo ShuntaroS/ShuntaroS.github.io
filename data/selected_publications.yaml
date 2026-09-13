@@ -5,6 +5,7 @@ sections:
       en: "Original Articles, First Author"
     items:
       - year: 2025
+        research_selected: true
         title: "Estimation of the adjusted risk difference for very rare events, large samples, and extreme exposure frequency: Application of Vaccine Effectiveness, Networking, and Universal Safety study data"
         authors: "Sato S, Kawazoe Y, Murata F, Maeda M, Fukuda H"
         citation: "Ann Clin Epidemiol. 2025;7(2):50-60."
@@ -12,6 +13,7 @@ sections:
         pmid: "40226163"
         url: "https://pubmed.ncbi.nlm.nih.gov/40226163/"
       - year: 2024
+        research_selected: true
         title: "Comparison design and evaluation power in cohort and self-controlled case series designs for post-authorization vaccine safety studies"
         authors: "Sato S, Kawazoe Y, Katsuta T, Fukuda H"
         citation: "PeerJ. 2024;12:e16780."
@@ -73,8 +75,20 @@ sections:
       ja: "書籍"
       en: "Books"
     items:
+      - year: 2026
+        title: "疫学のデザイン入門 — 健康科学への因果的アプローチ"
+        authors: "Daniel Westreich 著; 佐藤俊太朗, 藤井亮輔, 井上浩輔 訳"
+        citation: "学術図書出版社, 2026年7月. ISBN 978-4-7806-1477-0."
+        url: "https://www.gakujutsu.co.jp/product/978-4-7806-1477-0/"
+        url_label:
+          ja: "出版社のページ"
+          en: "Publisher (Japanese)"
+        cover: "images/books/epidemiology-by-design-ja.jpg"
+        cover_source: "https://www.gakujutsu.co.jp/cms/wp-content/uploads/2026/06/isbn978-4-7806-1477-0.jpg"
       - year: 2024
         title: "現代疫学 原著第4版"
         authors: "Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse, Kenneth J. Rothman 編; 佐藤俊太朗, 藤井亮輔, 芝孝一郎, 後藤匡啓, 今村文昭 監訳"
         citation: "原著: Modern Epidemiology, 4th edition. Wolters Kluwer, 2020."
         url: "https://amzn.asia/d/2nWmtYv"
+        cover: "images/books/modern-epidemiology-ja.jpg"
+        cover_source: "https://www.gakujutsu.co.jp/cms/wp-content/uploads/2024/04/isbn978-4-7806-1245-5.jpg"

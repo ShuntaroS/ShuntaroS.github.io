@@ -1,8 +1,8 @@
 ---
-title: "プロフィール"
-page-layout: full
-toc: false
-body-class: home
+title: "佐藤 俊太朗"
+description: "佐藤俊太朗。長崎大学病院 臨床研究センター。生物統計学・疫学、臨床研究の統計的方法論、研究支援・教育。"
+body-classes: home
+homepage: true
 ---
 
 {{< include _includes/home-ja.md >}}

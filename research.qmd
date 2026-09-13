@@ -1,0 +1,49 @@
+---
+title: "Research"
+subtitle: "研究について"
+description: "佐藤俊太朗の研究分野。因果推論、生存時間アウトカム、臨床研究の統計的方法論。"
+---
+
+::: {.research-intro .lead}
+生物統計学と疫学を専門に、臨床研究で使いやすく、結果を解釈しやすい指標や統計的方法を研究しています。
+研究デザインから解析、結果の解釈まで、臨床研究者との協働にも取り組んでいます。
+:::
+
+::: {.research-topic}
+## [01]{.topic-number aria-hidden="true"} 因果推論
+
+観察研究から介入や曝露の効果を考えるための、研究デザインと解析方法に関心があります。
+ワクチンの安全性評価を題材に、コホート研究と自己対照ケースシリーズの比較や、交絡を調整したリスク差の推定を検討してきました。
+
+[関連する論文へ](#selected-publications){.arrow-link}
+:::
+
+::: {.research-topic}
+## [02]{.topic-number aria-hidden="true"} 生存時間アウトカム
+
+イベントが起こるまでの時間を扱う統計解析と、その結果の解釈に関心があります。
+生存時間データの群間比較や効果の推定について、臨床研究での実践的な疑問を扱う教育活動も行っています。
+
+[関連するセミナーへ](seminars.qmd#lectures){.arrow-link}
+:::
+
+::: {.research-topic}
+## [03]{.topic-number aria-hidden="true"} 臨床研究の統計的方法論
+
+臨床試験・観察研究における研究デザイン、統計解析、結果の解釈に取り組んでいます。
+まれなイベントのリスク差や、ワクチン安全性研究の検出力など、臨床研究で直面する条件のもとで統計的方法を検討しています。
+
+[研究業績へ](publications.qmd){.arrow-link}
+:::
+
+## Selected publications {#selected-publications}
+
+{{< include _includes/research-selected-ja.md >}}
+
+[すべての業績を見る](publications.qmd){.arrow-link}
+
+::: {.contact-note}
+共同研究や統計相談については、お問い合わせページからご連絡ください。
+
+[お問い合わせ](contact.qmd){.arrow-link}
+:::

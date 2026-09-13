@@ -25,6 +25,8 @@ links:
     label: researchmap
   - icon: brands/x
     url: https://twitter.com/Shuntarooo3
+  - label: note
+    url: https://note.com/suntarooo3
 interests:
   - 生物統計学
   - 疫学方法論
